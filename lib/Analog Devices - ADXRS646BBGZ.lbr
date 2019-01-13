@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle>
+    <drawing>
+        <grid unitdist="mm" unit="mm"/>
+        <layers>
+            <layer name="Top" color="4" number="1" visible="yes" active="yes" fill="1"/>
+            <layer name="tKeepout" color="0" number="4" visible="yes" active="yes" fill="1"/>
+            <layer name="Bottom" color="4" number="16" visible="yes" active="yes" fill="1"/>
+            <layer name="tPlace" color="7" number="21" visible="yes" active="yes" fill="1"/>
+            <layer name="bPlace" color="7" number="22" visible="yes" active="yes" fill="1"/>
+            <layer name="tNames" color="7" number="25" visible="yes" active="yes" fill="1"/>
+            <layer name="bNames" color="7" number="26" visible="yes" active="yes" fill="1"/>
+            <layer name="tValues" color="7" number="27" visible="yes" active="yes" fill="1"/>
+            <layer name="bValues" color="7" number="28" visible="yes" active="yes" fill="1"/>
+            <layer name="tStop" color="7" number="29" visible="yes" active="yes" fill="1"/>
+            <layer name="bStop" color="7" number="30" visible="yes" active="yes" fill="1"/>
+            <layer name="tCream" color="7" number="31" visible="yes" active="yes" fill="1"/>
+            <layer name="bCream" color="7" number="32" visible="yes" active="yes" fill="1"/>
+            <layer name="bKeepout" color="0" number="40" visible="yes" active="yes" fill="1"/>
+            <layer name="tRestrict" color="4" number="41" visible="yes" active="yes" fill="1"/>
+            <layer name="bRestrict" color="4" number="42" visible="yes" active="yes" fill="1"/>
+            <layer name="tDocu" color="7" number="51" visible="yes" active="yes" fill="1"/>
+            <layer name="bDocu" color="7" number="52" visible="yes" active="yes" fill="1"/>
+            <layer name="Nets" color="2" number="91" visible="yes" active="yes" fill="1"/>
+            <layer name="Busses" color="1" number="92" visible="yes" active="yes" fill="1"/>
+            <layer name="Pins" color="2" number="93" visible="yes" active="yes" fill="1"/>
+            <layer name="Symbols" color="4" number="94" visible="yes" active="yes" fill="1"/>
+            <layer name="Names" color="7" number="95" visible="yes" active="yes" fill="1"/>
+            <layer name="Values" color="7" number="96" visible="yes" active="yes" fill="1"/>
+            <layer name="Info" color="7" number="97" visible="yes" active="yes" fill="1"/>
+            <layer name="Guide" color="6" number="98" visible="yes" active="yes" fill="1"/>
+        </layers>
+        <library name="Upverter Library">
+            <description>Upverter Parts Library
+
+Created by Upverter.com</description>
+            <packages>
+                <package name="ANALOG_DEVICES_ADXRS646BBGZ_0">
+                    <description>ADI-ADXRS646-BG-32-3</description>
+                    <polygon layer="21" width="0.0">
+                        <vertex y="3.45" x="-2.45"/>
+                        <vertex y="2.45" x="-3.45"/>
+                        <vertex y="3.45" x="-3.45"/>
+                    </polygon>
+                    <wire layer="21" y2="3.45" width="0.15" x2="-2.45" y1="2.45" x1="-3.45"/>
+                    <wire layer="21" y2="3.45" width="0.15" x2="-3.45" y1="-3.45" x1="-3.45"/>
+                    <wire layer="21" y2="3.45" width="0.15" x2="3.45" y1="-3.45" x1="3.45"/>
+                    <wire layer="21" y2="3.45" width="0.15" x2="3.45" y1="3.45" x1="-3.45"/>
+                    <wire layer="21" y2="-3.45" width="0.15" x2="3.45" y1="-3.45" x1="-3.45"/>
+                    <wire layer="51" y2="3.44" width="0.1" x2="-3.44" y1="-3.44" x1="-3.44"/>
+                    <wire layer="51" y2="3.44" width="0.1" x2="3.44" y1="-3.44" x1="3.44"/>
+                    <wire layer="51" y2="3.44" width="0.1" x2="3.44" y1="3.44" x1="-3.44"/>
+                    <wire layer="51" y2="-3.44" width="0.1" x2="3.44" y1="-3.44" x1="-3.44"/>
+                    <wire layer="41" y2="3.95" width="0.1" x2="-3.95" y1="-3.95" x1="-3.95"/>
+                    <wire layer="41" y2="3.95" width="0.1" x2="3.95" y1="3.95" x1="-3.95"/>
+                    <wire layer="41" y2="-3.95" width="0.1" x2="3.95" y1="3.95" x1="3.95"/>
+                    <wire layer="41" y2="-3.95" width="0.1" x2="-3.95" y1="-3.95" x1="3.95"/>
+                    <text layer="25" align="bottom-left" y="3.95" x="-5.225" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="3.3" x="-4.1" layer="21" radius="0.125" width="0.25"/>
+                    <smd layer="1" thermals="yes" name="A2" stop="yes" roundness="100" dx="0.5" dy="0.5" y="2.4" x="-1.6" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="A3" stop="yes" roundness="100" dx="0.5" dy="0.5" y="2.4" x="-0.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="A4" stop="yes" roundness="100" dx="0.5" dy="0.5" y="2.4" x="0.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="A5" stop="yes" roundness="100" dx="0.5" dy="0.5" y="2.4" x="0.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="A6" stop="yes" roundness="100" dx="0.5" dy="0.5" y="2.4" x="1.6" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="B1" stop="yes" roundness="100" dx="0.5" dy="0.5" y="1.6" x="-2.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="B3" stop="yes" roundness="100" dx="0.5" dy="0.5" y="1.6" x="-0.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="B4" stop="yes" roundness="100" dx="0.5" dy="0.5" y="1.6" x="0.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="B5" stop="yes" roundness="100" dx="0.5" dy="0.5" y="1.6" x="0.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="B7" stop="yes" roundness="100" dx="0.5" dy="0.5" y="1.6" x="2.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="C1" stop="yes" roundness="100" dx="0.5" dy="0.5" y="0.8" x="-2.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="C2" stop="yes" roundness="100" dx="0.5" dy="0.5" y="0.8" x="-1.6" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="C6" stop="yes" roundness="100" dx="0.5" dy="0.5" y="0.8" x="1.6" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="C7" stop="yes" roundness="100" dx="0.5" dy="0.5" y="0.8" x="2.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="D1" stop="yes" roundness="100" dx="0.5" dy="0.5" y="0.0" x="-2.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="D2" stop="yes" roundness="100" dx="0.5" dy="0.5" y="0.0" x="-1.6" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="D6" stop="yes" roundness="100" dx="0.5" dy="0.5" y="0.0" x="1.6" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="D7" stop="yes" roundness="100" dx="0.5" dy="0.5" y="0.0" x="2.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="E1" stop="yes" roundness="100" dx="0.5" dy="0.5" y="-0.8" x="-2.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="E2" stop="yes" roundness="100" dx="0.5" dy="0.5" y="-0.8" x="-1.6" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="E6" stop="yes" roundness="100" dx="0.5" dy="0.5" y="-0.8" x="1.6" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="E7" stop="yes" roundness="100" dx="0.5" dy="0.5" y="-0.8" x="2.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="F1" stop="yes" roundness="100" dx="0.5" dy="0.5" y="-1.6" x="-2.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="F3" stop="yes" roundness="100" dx="0.5" dy="0.5" y="-1.6" x="-0.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="F4" stop="yes" roundness="100" dx="0.5" dy="0.5" y="-1.6" x="0.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="F5" stop="yes" roundness="100" dx="0.5" dy="0.5" y="-1.6" x="0.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="F7" stop="yes" roundness="100" dx="0.5" dy="0.5" y="-1.6" x="2.4" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="G2" stop="yes" roundness="100" dx="0.5" dy="0.5" y="-2.4" x="-1.6" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="G3" stop="yes" roundness="100" dx="0.5" dy="0.5" y="-2.4" x="-0.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="G4" stop="yes" roundness="100" dx="0.5" dy="0.5" y="-2.4" x="0.0" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="G5" stop="yes" roundness="100" dx="0.5" dy="0.5" y="-2.4" x="0.8" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="G6" stop="yes" roundness="100" dx="0.5" dy="0.5" y="-2.4" x="1.6" rot="R0" cream="yes"/>
+                </package>
+            </packages>
+            <symbols>
+                <symbol name="ANALOG_DEVICES_ADXRS646BBGZ_0_0">
+                    <description>ADI-ADXRS646-BG-32-3</description>
+                    <wire layer="94" y2="-5.08" width="0.508" x2="0.0" y1="-40.64" x1="0.0"/>
+                    <wire layer="94" y2="-5.08" width="0.508" x2="20.32" y1="-5.08" x1="0.0"/>
+                    <wire layer="94" y2="-40.64" width="0.508" x2="20.32" y1="-5.08" x1="20.32"/>
+                    <wire layer="94" y2="-40.64" width="0.508" x2="0.0" y1="-40.64" x1="20.32"/>
+                    <wire layer="94" y2="-27.94" width="0.15" x2="0.0" y1="-27.94" x1="0.0"/>
+                    <wire layer="94" y2="-12.7" width="0.15" x2="20.32" y1="-12.7" x1="20.32"/>
+                    <wire layer="94" y2="-7.62" width="0.15" x2="20.32" y1="-7.62" x1="20.32"/>
+                    <wire layer="94" y2="-22.86" width="0.15" x2="20.32" y1="-22.86" x1="20.32"/>
+                    <wire layer="94" y2="-30.48" width="0.15" x2="0.0" y1="-30.48" x1="0.0"/>
+                    <wire layer="94" y2="-15.24" width="0.15" x2="20.32" y1="-15.24" x1="20.32"/>
+                    <wire layer="94" y2="-10.16" width="0.15" x2="20.32" y1="-10.16" x1="20.32"/>
+                    <wire layer="94" y2="-25.4" width="0.15" x2="20.32" y1="-25.4" x1="20.32"/>
+                    <wire layer="94" y2="-20.32" width="0.15" x2="0.0" y1="-20.32" x1="0.0"/>
+                    <wire layer="94" y2="-22.86" width="0.15" x2="0.0" y1="-22.86" x1="0.0"/>
+                    <wire layer="94" y2="-17.78" width="0.15" x2="20.32" y1="-17.78" x1="20.32"/>
+                    <wire layer="94" y2="-20.32" width="0.15" x2="20.32" y1="-20.32" x1="20.32"/>
+                    <wire layer="94" y2="-35.56" width="0.15" x2="0.0" y1="-35.56" x1="0.0"/>
+                    <wire layer="94" y2="-38.1" width="0.15" x2="0.0" y1="-38.1" x1="0.0"/>
+                    <wire layer="94" y2="-27.94" width="0.15" x2="20.32" y1="-27.94" x1="20.32"/>
+                    <wire layer="94" y2="-30.48" width="0.15" x2="20.32" y1="-30.48" x1="20.32"/>
+                    <wire layer="94" y2="-35.56" width="0.15" x2="20.32" y1="-35.56" x1="20.32"/>
+                    <wire layer="94" y2="-12.7" width="0.15" x2="0.0" y1="-12.7" x1="0.0"/>
+                    <wire layer="94" y2="-7.62" width="0.15" x2="0.0" y1="-7.62" x1="0.0"/>
+                    <wire layer="94" y2="-38.1" width="0.15" x2="20.32" y1="-38.1" x1="20.32"/>
+                    <wire layer="94" y2="-15.24" width="0.15" x2="0.0" y1="-15.24" x1="0.0"/>
+                    <wire layer="94" y2="-10.16" width="0.15" x2="0.0" y1="-10.16" x1="0.0"/>
+                    <text layer="95" align="top-left" y="-2.54" x="0.0" rot="R0" size="2.54">&gt;NAME</text>
+                    <text layer="95" align="top-left" y="-45.72" x="0.0" rot="R0" size="2.54">ADXRS646BBGZ</text>
+                    <pin direction="out" name="1_RATEOUT" visible="both" length="middle" y="-27.94" x="-5.08"/>
+                    <pin direction="pas" name="1_CP2" visible="both" length="middle" y="-12.7" x="25.4" rot="R180"/>
+                    <pin direction="pas" name="1_CP1" visible="both" length="middle" y="-7.62" x="25.4" rot="R180"/>
+                    <pin direction="pas" name="1_CP4" visible="both" length="middle" y="-22.86" x="25.4" rot="R180"/>
+                    <pin direction="out" name="2_RATEOUT" visible="both" length="middle" y="-30.48" x="-5.08"/>
+                    <pin direction="pas" name="2_CP2" visible="both" length="middle" y="-15.24" x="25.4" rot="R180"/>
+                    <pin direction="pas" name="2_CP1" visible="both" length="middle" y="-10.16" x="25.4" rot="R180"/>
+                    <pin direction="pas" name="2_CP4" visible="both" length="middle" y="-25.4" x="25.4" rot="R180"/>
+                    <pin direction="in" name="1_SUMJ" visible="both" length="middle" y="-20.32" x="-5.08"/>
+                    <pin direction="in" name="2_SUMJ" visible="both" length="middle" y="-22.86" x="-5.08"/>
+                    <pin direction="pas" name="1_CP3" visible="both" length="middle" y="-17.78" x="25.4" rot="R180"/>
+                    <pin direction="pas" name="2_CP3" visible="both" length="middle" y="-20.32" x="25.4" rot="R180"/>
+                    <pin direction="pas" name="1_DNC" visible="both" length="middle" y="-35.56" x="-5.08"/>
+                    <pin direction="pas" name="2_DNC" visible="both" length="middle" y="-38.1" x="-5.08"/>
+                    <pin direction="pwr" name="1_CP5" visible="both" length="middle" y="-27.94" x="25.4" rot="R180"/>
+                    <pin direction="pwr" name="2_CP5" visible="both" length="middle" y="-30.48" x="25.4" rot="R180"/>
+                    <pin direction="out" name="1_TEMP" visible="both" length="middle" y="-35.56" x="25.4" rot="R180"/>
+                    <pin direction="in" name="1_ST2" visible="both" length="middle" y="-12.7" x="-5.08"/>
+                    <pin direction="in" name="1_ST1" visible="both" length="middle" y="-7.62" x="-5.08"/>
+                    <pin direction="out" name="2_TEMP" visible="both" length="middle" y="-38.1" x="25.4" rot="R180"/>
+                    <pin direction="in" name="2_ST2" visible="both" length="middle" y="-15.24" x="-5.08"/>
+                    <pin direction="in" name="2_ST1" visible="both" length="middle" y="-10.16" x="-5.08"/>
+                </symbol>
+                <symbol name="ANALOG_DEVICES_ADXRS646BBGZ_0_1">
+                    <description>ADI-ADXRS646-BG-32-3</description>
+                    <wire layer="94" y2="-5.08" width="0.508" x2="0.0" y1="-27.94" x1="0.0"/>
+                    <wire layer="94" y2="-5.08" width="0.508" x2="20.32" y1="-5.08" x1="0.0"/>
+                    <wire layer="94" y2="-27.94" width="0.508" x2="20.32" y1="-5.08" x1="20.32"/>
+                    <wire layer="94" y2="-27.94" width="0.508" x2="0.0" y1="-27.94" x1="20.32"/>
+                    <wire layer="94" y2="-22.86" width="0.15" x2="0.0" y1="-22.86" x1="0.0"/>
+                    <wire layer="94" y2="-25.4" width="0.15" x2="0.0" y1="-25.4" x1="0.0"/>
+                    <wire layer="94" y2="-7.62" width="0.15" x2="0.0" y1="-7.62" x1="0.0"/>
+                    <wire layer="94" y2="-10.16" width="0.15" x2="0.0" y1="-10.16" x1="0.0"/>
+                    <wire layer="94" y2="-15.24" width="0.15" x2="0.0" y1="-15.24" x1="0.0"/>
+                    <wire layer="94" y2="-17.78" width="0.15" x2="0.0" y1="-17.78" x1="0.0"/>
+                    <wire layer="94" y2="-22.86" width="0.15" x2="20.32" y1="-22.86" x1="20.32"/>
+                    <wire layer="94" y2="-15.24" width="0.15" x2="20.32" y1="-15.24" x1="20.32"/>
+                    <wire layer="94" y2="-25.4" width="0.15" x2="20.32" y1="-25.4" x1="20.32"/>
+                    <wire layer="94" y2="-17.78" width="0.15" x2="20.32" y1="-17.78" x1="20.32"/>
+                    <text layer="95" align="top-left" y="-2.54" x="0.0" rot="R0" size="2.54">&gt;NAME</text>
+                    <text layer="95" align="top-left" y="-33.02" x="0.0" rot="R0" size="2.54">ADXRS646BBGZ</text>
+                    <pin direction="pwr" name="1_AVCC" visible="both" length="middle" y="-22.86" x="-5.08"/>
+                    <pin direction="pwr" name="2_AVCC" visible="both" length="middle" y="-25.4" x="-5.08"/>
+                    <pin direction="pwr" name="1_VRATIO" visible="both" length="middle" y="-7.62" x="-5.08"/>
+                    <pin direction="pwr" name="2_VRATIO" visible="both" length="middle" y="-10.16" x="-5.08"/>
+                    <pin direction="pwr" name="1_VDD" visible="both" length="middle" y="-15.24" x="-5.08"/>
+                    <pin direction="pwr" name="2_VDD" visible="both" length="middle" y="-17.78" x="-5.08"/>
+                    <pin direction="pwr" name="1_AGND" visible="both" length="middle" y="-22.86" x="25.4" rot="R180"/>
+                    <pin direction="pwr" name="1_PGND" visible="both" length="middle" y="-15.24" x="25.4" rot="R180"/>
+                    <pin direction="pwr" name="2_AGND" visible="both" length="middle" y="-25.4" x="25.4" rot="R180"/>
+                    <pin direction="pwr" name="2_PGND" visible="both" length="middle" y="-17.78" x="25.4" rot="R180"/>
+                </symbol>
+            </symbols>
+            <devicesets>
+                <deviceset prefix="U" name="ANALOG_DEVICES_ADXRS646BBGZ">
+                    <description>ADI-ADXRS646-BG-32-3</description>
+                    <gates>
+                        <gate name="A" symbol="ANALOG_DEVICES_ADXRS646BBGZ_0_0" x="0"/>
+                        <gate name="B" symbol="ANALOG_DEVICES_ADXRS646BBGZ_0_1" x="40.32"/>
+                    </gates>
+                    <devices>
+                        <device name="ANALOG_DEVICES_ADXRS646BBGZ_0_0" package="ANALOG_DEVICES_ADXRS646BBGZ_0">
+                            <connects>
+                                <connect gate="A" pad="A2" pin="1_RATEOUT"/>
+                                <connect gate="B" pad="A3" pin="1_AVCC"/>
+                                <connect gate="A" pad="A4" pin="1_CP2"/>
+                                <connect gate="A" pad="A5" pin="1_CP1"/>
+                                <connect gate="A" pad="A6" pin="1_CP4"/>
+                                <connect gate="A" pad="B1" pin="2_RATEOUT"/>
+                                <connect gate="B" pad="B3" pin="2_AVCC"/>
+                                <connect gate="A" pad="B4" pin="2_CP2"/>
+                                <connect gate="A" pad="B5" pin="2_CP1"/>
+                                <connect gate="A" pad="B7" pin="2_CP4"/>
+                                <connect gate="A" pad="C1" pin="1_SUMJ"/>
+                                <connect gate="A" pad="C2" pin="2_SUMJ"/>
+                                <connect gate="A" pad="C6" pin="1_CP3"/>
+                                <connect gate="A" pad="C7" pin="2_CP3"/>
+                                <connect gate="A" pad="D1" pin="1_DNC"/>
+                                <connect gate="A" pad="D2" pin="2_DNC"/>
+                                <connect gate="A" pad="D6" pin="1_CP5"/>
+                                <connect gate="A" pad="D7" pin="2_CP5"/>
+                                <connect gate="B" pad="E1" pin="1_VRATIO"/>
+                                <connect gate="B" pad="E2" pin="2_VRATIO"/>
+                                <connect gate="B" pad="E6" pin="1_VDD"/>
+                                <connect gate="B" pad="E7" pin="2_VDD"/>
+                                <connect gate="B" pad="F1" pin="1_AGND"/>
+                                <connect gate="A" pad="F3" pin="1_TEMP"/>
+                                <connect gate="A" pad="F4" pin="1_ST2"/>
+                                <connect gate="A" pad="F5" pin="1_ST1"/>
+                                <connect gate="B" pad="F7" pin="1_PGND"/>
+                                <connect gate="B" pad="G2" pin="2_AGND"/>
+                                <connect gate="A" pad="G3" pin="2_TEMP"/>
+                                <connect gate="A" pad="G4" pin="2_ST2"/>
+                                <connect gate="A" pad="G5" pin="2_ST1"/>
+                                <connect gate="B" pad="G6" pin="2_PGND"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="ciiva_ids" value="978111"/>
+                                    <attribute name="Package_Version" value="042307-A, 04/2007"/>
+                                    <attribute name="Component_Link_1_Description" value="Manufacturer URL"/>
+                                    <attribute name="vault_guid" value="39260BA0-1B05-41FE-9F0C-E391FDD8AF37"/>
+                                    <attribute name="Component_Link_4_Description" value="Product URL"/>
+                                    <attribute name="Mounting_Technology" value="Surface Mount"/>
+                                    <attribute name="Component_Link_1_URL" value="http://www.analog.com/en/index.html"/>
+                                    <attribute name="Output_Type" value="Analog"/>
+                                    <attribute name="imported" value="yes"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="import_ts" value="1521855654"/>
+                                    <attribute name="Datasheet_Version" value="Rev. A"/>
+                                    <attribute name="Packing" value="Tray"/>
+                                    <attribute name="Supply_Current" value="4 mA"/>
+                                    <attribute name="Package_Description" value="32-Ball Ceramic Ball Grid Array, 6.85 x 6.85 mm Body, 0.8 mm Pitch"/>
+                                    <attribute name="datasheet" value="http://www.analog.com/static/imported-files/data_sheets/ADXRS646.pdf"/>
+                                    <attribute name="vault_revision" value="44A55B5B-B9A1-45C2-8DBB-A65CD5D96A36"/>
+                                    <attribute name="footprint_variant_name_0" value="Manufacturer Recommended"/>
+                                    <attribute name="release_date" value="1396258507"/>
+                                    <attribute name="Component_Link_4_URL" value="http://www.analog.com/en/mems-sensors/mems-gyroscopes/adxrs646/products/product.html"/>
+                                    <attribute name="MPN" value="ADXRS646BBGZ"/>
+                                    <attribute name="imported_from" value="vault"/>
+                                    <attribute name="Voltage_Supply_V" value="5.75 to 6.25"/>
+                                    <attribute name="Temp_Sensor" value="Yes"/>
+                                    <attribute name="Component_Link_3_Description" value="Package Specification"/>
+                                    <attribute name="MF" value="Analog Devices"/>
+                                    <attribute name="package" value="BG-32-3"/>
+                                    <attribute name="Nonliniarity" value="0.01% of FS"/>
+                                    <attribute name="Voltage_Reference" value="No"/>
+                                    <attribute name="3dB_Bandwidth" value="1 KHz"/>
+                                    <attribute name="Component_Link_3_URL" value="http:/www.analog.com/static/imported-files/packages/6438543BG_32_3.pdf"/>
+                                    <attribute name="Sensitivity" value="9 mV/degrees/s"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                    </devices>
+                </deviceset>
+            </devicesets>
+        </library>
+    </drawing>
+</eagle>
