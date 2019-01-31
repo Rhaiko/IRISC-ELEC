@@ -5914,52 +5914,308 @@ Output Current: 4A</description>
 <part name="X1" library="raspberrypi_bastelstube_v13" deviceset="RASPI_BOARD_B+" device="_E4"/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="C1" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_REFLOW" package3d_urn="urn:adsk.eagle:package:7562358/1" technology="_885012006082"/>
-<part name="C2" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_REFLOW" package3d_urn="urn:adsk.eagle:package:7562358/1" technology="_885012006082"/>
-<part name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="C3" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
+<part name="C1" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_REFLOW" package3d_urn="urn:adsk.eagle:package:7562358/1" technology="_885012006082">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C2" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_REFLOW" package3d_urn="urn:adsk.eagle:package:7562358/1" technology="_885012006082">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="C3" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
 <part name="X_2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="C4" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C5" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
+<part name="C4" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C5" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
 <part name="BUCK_CONVERTER1" library="LM2695MH" deviceset="LM2695MH" device=""/>
 <part name="X_3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="L1" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="INDUCTOR" device="" package3d_urn="urn:adsk.eagle:package:5829817/3"/>
 <part name="D1" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="DIODE" device="" package3d_urn="urn:adsk.eagle:package:5829545/1"/>
-<part name="R2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="R3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="R4" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="C6" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
+<part name="R2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R4" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="C6" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
 <part name="X_4" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_6" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="R5" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="R6" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="R7" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="R8" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="R9" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="R10" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="C7" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C8" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C9" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C10" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C11" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C12" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C13" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
+<part name="R5" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R6" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R7" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R8" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R9" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R10" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="C7" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C8" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C9" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C10" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C11" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C12" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C13" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
 <part name="L2" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="INDUCTOR" device="" package3d_urn="urn:adsk.eagle:package:5829817/3"/>
 <part name="U2" library="SOP65P640X120-17N" deviceset="BUCK_CONVERTER1" device=""/>
 <part name="X_7" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="BUCK_CONVERTED2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="U3" library="SOIC127P600X170-8N" deviceset="BUCK_CONVERTER2" device=""/>
-<part name="C14" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C15" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C16" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C17" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C18" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="R11" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="R12" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="R13" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
+<part name="C14" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C15" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C16" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C17" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C18" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="R11" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R12" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R13" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
 <part name="L3" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="INDUCTOR" device="" package3d_urn="urn:adsk.eagle:package:5829817/3"/>
-<part name="C19" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
+<part name="C19" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
 <part name="X_8" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_9" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
@@ -6039,44 +6295,248 @@ Output Current: 4A</description>
 <part name="U10" library="Analog Devices - ADXRS646BBGZ" deviceset="ANALOG_DEVICES_ADXRS646BBGZ" device="ANALOG_DEVICES_ADXRS646BBGZ_0_0"/>
 <part name="SV1" library="con-amp-mt" library_urn="urn:adsk.eagle:library:123" deviceset="L03P" device="" package3d_urn="urn:adsk.eagle:package:5781/1"/>
 <part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="X_36" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="C20" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_REFLOW" package3d_urn="urn:adsk.eagle:package:7562358/1" technology="_885012006082"/>
-<part name="C21" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_REFLOW" package3d_urn="urn:adsk.eagle:package:7562358/1" technology="_885012006082"/>
-<part name="R14" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="C22" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
+<part name="X_36" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device="">
+<attribute name="SPICEPREFIX" value="G"/>
+</part>
+<part name="C20" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_REFLOW" package3d_urn="urn:adsk.eagle:package:7562358/1" technology="_885012006082" value="0.1 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C21" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_REFLOW" package3d_urn="urn:adsk.eagle:package:7562358/1" technology="_885012006082" value="3 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="R14" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1" value="470 k">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="C22" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="492 nF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
 <part name="X_37" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="C23" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C24" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
+<part name="C23" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="1 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C24" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="22 pF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
 <part name="BUCK_CONVERTER2" library="LM2695MH" deviceset="LM2695MH" device=""/>
 <part name="X_38" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="L4" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="INDUCTOR" device="" package3d_urn="urn:adsk.eagle:package:5829817/3"/>
-<part name="D2" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="DIODE" device="" package3d_urn="urn:adsk.eagle:package:5829545/1"/>
-<part name="R15" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="R17" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="C25" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
+<part name="L4" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="INDUCTOR" device="" package3d_urn="urn:adsk.eagle:package:5829817/3" value="24 uH"/>
+<part name="D2" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="DIODE" device="" package3d_urn="urn:adsk.eagle:package:5829545/1" value="0.75">
+<attribute name="SPICEPREFIX" value="D"/>
+</part>
+<part name="R15" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1" value="47 k">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R17" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1" value="12 k">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="C25" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="4 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
 <part name="X_39" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_40" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_41" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="R18" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="R19" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="R20" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="R21" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="R22" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="C26" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C27" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C28" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C29" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C30" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C31" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C32" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="L5" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="INDUCTOR" device="" package3d_urn="urn:adsk.eagle:package:5829817/3"/>
+<part name="R18" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1" value="1 M ">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R19" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1" value="1 M ">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R20" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1" value="200 k">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R21" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1" value="1 M">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R22" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1" value="442 k">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="C26" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="10 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C27" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="22pF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C28" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="47 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C29" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="220 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C30" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="44 pF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C31" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="2.2 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C32" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="1 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="L5" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="INDUCTOR" device="" package3d_urn="urn:adsk.eagle:package:5829817/3" value="68 uH"/>
 <part name="U11" library="SOP65P640X120-17N" deviceset="BUCK_CONVERTER1" device=""/>
 <part name="X_42" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="BUCK_CONVERTED1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="C36" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C37" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="R25" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="R26" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
+<part name="C36" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="100 nF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C37" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="32 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="R25" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1" value="56 k">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R26" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1" value="10 k">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
 <part name="L6" library="BeagleBone_Blue_R3" library_urn="urn:adsk.eagle:library:5828899" deviceset="INDUCTOR" device="" package3d_urn="urn:adsk.eagle:package:5829817/3" value="22uH"/>
 <part name="X_44" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
@@ -6084,22 +6544,132 @@ Output Current: 4A</description>
 <part name="SUPPLY19" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="SUPPLY20" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="BUCKCONVERTER1" library="SO-8" deviceset="BUCK-CONVERTER5V4A" device=""/>
-<part name="C33" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C34" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C35" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="R24" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="X_43" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="R27" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="C38" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C39" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
+<part name="C33" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="1.44 pF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C34" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="850 pF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C35" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="3 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="R24" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1" value="270 k">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R27" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1" value="27 k">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="C38" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="32 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C39" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="32 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
 <part name="BUCK_CONVERTED3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="R28" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1"/>
-<part name="C40" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C41" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
+<part name="R28" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FLIPFLOP-RES" device="" package3d_urn="urn:adsk.eagle:package:6240726/1" value="10 k">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="2"/>
+<pinmap gate="G$1" pin="2" pinorder="1"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="C40" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="220 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C41" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="220 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
 <part name="X_45" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="C42" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C43" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
-<part name="C44" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018"/>
+<part name="C42" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="0.1 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C43" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="4 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="C44" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="4 uF">
+<spice>
+<pinmapping isusermap="yes" isdevicewide="yes">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="X_43" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="X_46" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="X_47" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="X_48" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="X_49" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="X_50" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="X_51" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7646,36 +8216,36 @@ Output Current: 4A</description>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
 <instance part="X_36" gate="G$1" x="15.24" y="78.74" smashed="yes"/>
-<instance part="C20" gate="G$1" x="20.32" y="86.36" smashed="yes">
-<attribute name="NAME" x="28.194" y="93.091" size="1.778" layer="95"/>
-<attribute name="VALUE" x="23.114" y="82.931" size="1.778" layer="96"/>
+<instance part="C20" gate="G$1" x="17.78" y="86.36" smashed="yes">
+<attribute name="NAME" x="19.304" y="89.789" size="1.778" layer="95"/>
+<attribute name="VALUE" x="17.78" y="83.82" size="1.778" layer="96"/>
 </instance>
-<instance part="C21" gate="G$1" x="10.16" y="86.36" smashed="yes">
-<attribute name="NAME" x="12.954" y="90.551" size="1.778" layer="95"/>
-<attribute name="VALUE" x="12.954" y="82.931" size="1.778" layer="96"/>
+<instance part="C21" gate="G$1" x="7.62" y="86.36" smashed="yes">
+<attribute name="NAME" x="8.89" y="89.535" size="1.778" layer="95"/>
+<attribute name="VALUE" x="8.636" y="84.455" size="1.778" layer="96"/>
 </instance>
-<instance part="R14" gate="G$1" x="30.48" y="86.36" smashed="yes" rot="R90">
-<attribute name="NAME" x="28.9814" y="82.55" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="33.782" y="82.55" size="1.778" layer="96" rot="R90"/>
+<instance part="R14" gate="G$1" x="30.48" y="88.9" smashed="yes" rot="R90">
+<attribute name="NAME" x="28.956" y="87.122" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="33.528" y="86.36" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C22" gate="G$1" x="15.24" y="40.64" smashed="yes">
-<attribute name="NAME" x="18.034" y="44.831" size="1.778" layer="95"/>
-<attribute name="VALUE" x="18.034" y="37.211" size="1.778" layer="96"/>
+<attribute name="NAME" x="16.256" y="43.815" size="1.778" layer="95"/>
+<attribute name="VALUE" x="16.256" y="38.227" size="1.778" layer="96"/>
 </instance>
-<instance part="X_37" gate="G$1" x="15.24" y="22.86" smashed="yes"/>
+<instance part="X_37" gate="G$1" x="15.24" y="33.02" smashed="yes"/>
 <instance part="C23" gate="G$1" x="83.82" y="91.44" smashed="yes">
-<attribute name="NAME" x="86.614" y="95.631" size="1.778" layer="95"/>
-<attribute name="VALUE" x="86.614" y="88.011" size="1.778" layer="96"/>
+<attribute name="NAME" x="86.868" y="93.599" size="1.778" layer="95"/>
+<attribute name="VALUE" x="87.122" y="91.313" size="1.778" layer="96"/>
 </instance>
-<instance part="C24" gate="G$1" x="68.58" y="66.04" smashed="yes">
-<attribute name="NAME" x="71.374" y="70.231" size="1.778" layer="95"/>
-<attribute name="VALUE" x="71.374" y="62.611" size="1.778" layer="96"/>
+<instance part="C24" gate="G$1" x="68.58" y="63.5" smashed="yes">
+<attribute name="NAME" x="71.12" y="67.691" size="1.778" layer="95"/>
+<attribute name="VALUE" x="71.12" y="65.151" size="1.778" layer="96"/>
 </instance>
 <instance part="BUCK_CONVERTER2" gate="A" x="50.8" y="53.34" smashed="yes"/>
 <instance part="X_38" gate="G$1" x="83.82" y="83.82" smashed="yes"/>
 <instance part="L4" gate="G$1" x="78.74" y="58.42" smashed="yes" rot="R90">
-<attribute name="NAME" x="73.66" y="60.96" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="83.82" y="60.96" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="81.026" y="60.96" size="1.778" layer="95"/>
+<attribute name="VALUE" x="83.312" y="58.42" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="D2" gate="G$1" x="68.58" y="53.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="73.1774" y="53.34" size="1.778" layer="95" rot="R90"/>
@@ -7690,74 +8260,74 @@ Output Current: 4A</description>
 <attribute name="VALUE" x="89.662" y="34.29" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C25" gate="G$1" x="93.98" y="40.64" smashed="yes">
-<attribute name="NAME" x="96.774" y="44.831" size="1.778" layer="95"/>
-<attribute name="VALUE" x="96.774" y="37.211" size="1.778" layer="96"/>
+<attribute name="NAME" x="95.25" y="43.561" size="1.778" layer="95"/>
+<attribute name="VALUE" x="94.996" y="38.481" size="1.778" layer="96"/>
 </instance>
-<instance part="X_39" gate="G$1" x="25.4" y="22.86" smashed="yes"/>
+<instance part="X_39" gate="G$1" x="25.4" y="33.02" smashed="yes"/>
 <instance part="X_40" gate="G$1" x="86.36" y="22.86" smashed="yes"/>
-<instance part="X_41" gate="G$1" x="68.58" y="22.86" smashed="yes"/>
-<instance part="R18" gate="G$1" x="139.7" y="162.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="138.2014" y="158.75" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="143.002" y="158.75" size="1.778" layer="96" rot="R90"/>
+<instance part="X_41" gate="G$1" x="68.58" y="33.02" smashed="yes"/>
+<instance part="R18" gate="G$1" x="121.92" y="162.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="120.4214" y="158.75" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="125.222" y="158.75" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R19" gate="G$1" x="139.7" y="147.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="138.2014" y="143.51" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="143.002" y="143.51" size="1.778" layer="96" rot="R90"/>
+<instance part="R19" gate="G$1" x="121.92" y="139.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="120.4214" y="135.89" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="125.222" y="135.89" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R20" gate="G$1" x="152.4" y="132.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="150.9014" y="128.27" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="155.702" y="128.27" size="1.778" layer="96" rot="R90"/>
+<instance part="R20" gate="G$1" x="149.86" y="124.46" smashed="yes" rot="R90">
+<attribute name="NAME" x="148.3614" y="120.65" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="153.162" y="120.65" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R21" gate="G$1" x="233.68" y="160.02" smashed="yes" rot="R90">
-<attribute name="NAME" x="232.1814" y="156.21" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="236.982" y="156.21" size="1.778" layer="96" rot="R90"/>
+<instance part="R21" gate="G$1" x="237.998" y="162.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="236.4994" y="158.75" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="241.3" y="158.75" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R22" gate="G$1" x="233.68" y="144.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="232.1814" y="140.97" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="236.982" y="140.97" size="1.778" layer="96" rot="R90"/>
+<instance part="R22" gate="G$1" x="238.252" y="144.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="236.7534" y="140.97" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="241.554" y="140.97" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C26" gate="G$1" x="144.78" y="162.56" smashed="yes">
-<attribute name="NAME" x="142.494" y="169.291" size="1.778" layer="95"/>
-<attribute name="VALUE" x="147.574" y="159.131" size="1.778" layer="96"/>
+<instance part="C26" gate="G$1" x="134.62" y="162.56" smashed="yes">
+<attribute name="NAME" x="137.414" y="164.211" size="1.778" layer="95"/>
+<attribute name="VALUE" x="137.414" y="161.671" size="1.778" layer="96"/>
 </instance>
-<instance part="C27" gate="G$1" x="144.78" y="137.16" smashed="yes">
-<attribute name="NAME" x="147.574" y="141.351" size="1.778" layer="95"/>
-<attribute name="VALUE" x="147.574" y="133.731" size="1.778" layer="96"/>
+<instance part="C27" gate="G$1" x="142.24" y="137.16" smashed="yes">
+<attribute name="NAME" x="145.034" y="138.811" size="1.778" layer="95"/>
+<attribute name="VALUE" x="145.034" y="136.271" size="1.778" layer="96"/>
 </instance>
 <instance part="C28" gate="G$1" x="190.5" y="157.48" smashed="yes">
-<attribute name="NAME" x="193.294" y="161.671" size="1.778" layer="95"/>
-<attribute name="VALUE" x="193.294" y="154.051" size="1.778" layer="96"/>
+<attribute name="NAME" x="193.294" y="159.131" size="1.778" layer="95"/>
+<attribute name="VALUE" x="193.294" y="156.591" size="1.778" layer="96"/>
 </instance>
-<instance part="C29" gate="G$1" x="208.28" y="160.02" smashed="yes">
-<attribute name="NAME" x="211.074" y="164.211" size="1.778" layer="95"/>
-<attribute name="VALUE" x="211.074" y="156.591" size="1.778" layer="96"/>
+<instance part="C29" gate="G$1" x="205.74" y="160.02" smashed="yes">
+<attribute name="NAME" x="208.28" y="160.655" size="1.778" layer="95"/>
+<attribute name="VALUE" x="207.518" y="157.607" size="1.778" layer="96"/>
 </instance>
-<instance part="C30" gate="G$1" x="241.3" y="157.48" smashed="yes">
-<attribute name="NAME" x="244.094" y="161.671" size="1.778" layer="95"/>
-<attribute name="VALUE" x="244.094" y="154.051" size="1.778" layer="96"/>
+<instance part="C30" gate="G$1" x="243.84" y="157.48" smashed="yes">
+<attribute name="NAME" x="246.634" y="159.131" size="1.778" layer="95"/>
+<attribute name="VALUE" x="246.634" y="156.591" size="1.778" layer="96"/>
 </instance>
 <instance part="C31" gate="G$1" x="200.66" y="124.46" smashed="yes">
-<attribute name="NAME" x="203.454" y="128.651" size="1.778" layer="95"/>
-<attribute name="VALUE" x="203.454" y="121.031" size="1.778" layer="96"/>
+<attribute name="NAME" x="203.454" y="126.111" size="1.778" layer="95"/>
+<attribute name="VALUE" x="203.454" y="123.571" size="1.778" layer="96"/>
 </instance>
-<instance part="C32" gate="G$1" x="205.74" y="137.16" smashed="yes">
-<attribute name="NAME" x="208.534" y="141.351" size="1.778" layer="95"/>
-<attribute name="VALUE" x="208.534" y="133.731" size="1.778" layer="96"/>
+<instance part="C32" gate="G$1" x="210.82" y="137.16" smashed="yes">
+<attribute name="NAME" x="213.614" y="138.811" size="1.778" layer="95"/>
+<attribute name="VALUE" x="213.614" y="136.271" size="1.778" layer="96"/>
 </instance>
 <instance part="L5" gate="G$1" x="198.12" y="167.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="193.04" y="170.18" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="203.2" y="170.18" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="198.12" y="165.1" size="1.778" layer="95"/>
+<attribute name="VALUE" x="204.47" y="171.45" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="U11" gate="G$1" x="172.72" y="132.08" smashed="yes"/>
 <instance part="X_42" gate="G$1" x="147.32" y="106.68" smashed="yes"/>
 <instance part="BUCK_CONVERTED1" gate="G$1" x="210.82" y="106.68" smashed="yes"/>
 <instance part="C36" gate="G$1" x="187.96" y="71.12" smashed="yes" rot="R90">
 <attribute name="NAME" x="183.769" y="73.914" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="191.389" y="73.914" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="186.563" y="73.406" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C37" gate="G$1" x="233.68" y="53.34" smashed="yes">
-<attribute name="NAME" x="236.474" y="57.531" size="1.778" layer="95"/>
-<attribute name="VALUE" x="236.474" y="49.911" size="1.778" layer="96"/>
+<instance part="C37" gate="G$1" x="228.6" y="53.34" smashed="yes">
+<attribute name="NAME" x="230.124" y="57.277" size="1.778" layer="95"/>
+<attribute name="VALUE" x="229.616" y="50.673" size="1.778" layer="96"/>
 </instance>
 <instance part="R25" gate="G$1" x="220.98" y="73.66" smashed="yes" rot="R270">
 <attribute name="NAME" x="222.4786" y="77.47" size="1.778" layer="95" rot="R270"/>
@@ -7771,7 +8341,7 @@ Output Current: 4A</description>
 <attribute name="NAME" x="200.66" y="83.82" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="210.82" y="83.82" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="X_44" gate="G$1" x="208.28" y="154.94" smashed="yes"/>
+<instance part="X_44" gate="G$1" x="205.74" y="154.94" smashed="yes"/>
 <instance part="SUPPLY17" gate="G$1" x="25.4" y="167.64" smashed="yes">
 <attribute name="VALUE" x="25.4" y="170.434" size="1.778" layer="96" align="bottom-center"/>
 </instance>
@@ -7786,70 +8356,76 @@ Output Current: 4A</description>
 </instance>
 <instance part="BUCKCONVERTER1" gate="G$1" x="160.02" y="60.96" smashed="yes"/>
 <instance part="C33" gate="G$1" x="190.5" y="48.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="186.309" y="51.054" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="193.929" y="51.054" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="-0.508" y="232.791" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="192.405" y="49.784" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C34" gate="G$1" x="137.16" y="81.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="132.969" y="84.074" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="140.589" y="84.074" size="1.778" layer="96" rot="R90"/>
+<instance part="C34" gate="G$1" x="139.7" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="138.049" y="84.074" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="141.859" y="82.804" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C35" gate="G$1" x="119.38" y="83.82" smashed="yes">
-<attribute name="NAME" x="122.174" y="88.011" size="1.778" layer="95"/>
-<attribute name="VALUE" x="122.174" y="80.391" size="1.778" layer="96"/>
+<instance part="C35" gate="G$1" x="124.46" y="86.36" smashed="yes">
+<attribute name="NAME" x="118.11" y="88.519" size="1.778" layer="95"/>
+<attribute name="VALUE" x="117.602" y="85.471" size="1.778" layer="96"/>
 </instance>
 <instance part="R24" gate="G$1" x="137.16" y="43.18" smashed="yes" rot="R270">
-<attribute name="NAME" x="138.6586" y="46.99" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="133.858" y="46.99" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="133.5786" y="44.45" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="138.938" y="45.466" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="X_43" gate="G$1" x="152.4" y="30.48" smashed="yes"/>
 <instance part="R27" gate="G$1" x="200.66" y="40.64" smashed="yes" rot="R270">
 <attribute name="NAME" x="202.1586" y="44.45" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="197.358" y="44.45" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C38" gate="G$1" x="241.3" y="53.34" smashed="yes">
-<attribute name="NAME" x="244.094" y="57.531" size="1.778" layer="95"/>
-<attribute name="VALUE" x="244.094" y="49.911" size="1.778" layer="96"/>
+<instance part="C38" gate="G$1" x="238.76" y="53.34" smashed="yes">
+<attribute name="NAME" x="240.03" y="56.769" size="1.778" layer="95"/>
+<attribute name="VALUE" x="239.268" y="50.673" size="1.778" layer="96"/>
 </instance>
 <instance part="C39" gate="G$1" x="248.92" y="53.34" smashed="yes">
-<attribute name="NAME" x="251.714" y="57.531" size="1.778" layer="95"/>
-<attribute name="VALUE" x="251.714" y="49.911" size="1.778" layer="96"/>
+<attribute name="NAME" x="250.444" y="57.023" size="1.778" layer="95"/>
+<attribute name="VALUE" x="250.698" y="51.181" size="1.778" layer="96"/>
 </instance>
-<instance part="BUCK_CONVERTED3" gate="G$1" x="233.68" y="134.62" smashed="yes"/>
+<instance part="BUCK_CONVERTED3" gate="G$1" x="238.252" y="136.398" smashed="yes"/>
 <instance part="R28" gate="G$1" x="218.44" y="119.38" smashed="yes" rot="R180">
 <attribute name="NAME" x="222.25" y="117.8814" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="222.25" y="122.682" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C40" gate="G$1" x="215.9" y="160.02" smashed="yes">
-<attribute name="NAME" x="218.694" y="164.211" size="1.778" layer="95"/>
-<attribute name="VALUE" x="218.694" y="156.591" size="1.778" layer="96"/>
+<attribute name="NAME" x="218.948" y="160.401" size="1.778" layer="95"/>
+<attribute name="VALUE" x="217.932" y="157.353" size="1.778" layer="96"/>
 </instance>
-<instance part="C41" gate="G$1" x="223.52" y="160.02" smashed="yes">
-<attribute name="NAME" x="226.314" y="164.211" size="1.778" layer="95"/>
-<attribute name="VALUE" x="226.314" y="156.591" size="1.778" layer="96"/>
+<instance part="C41" gate="G$1" x="226.06" y="160.02" smashed="yes">
+<attribute name="NAME" x="228.854" y="161.671" size="1.778" layer="95"/>
+<attribute name="VALUE" x="227.076" y="157.353" size="1.778" layer="96"/>
 </instance>
 <instance part="X_45" gate="G$1" x="147.32" y="160.02" smashed="yes"/>
-<instance part="C42" gate="G$1" x="152.4" y="162.56" smashed="yes">
-<attribute name="NAME" x="150.114" y="169.291" size="1.778" layer="95"/>
-<attribute name="VALUE" x="155.194" y="159.131" size="1.778" layer="96"/>
+<instance part="C42" gate="G$1" x="144.78" y="162.56" smashed="yes">
+<attribute name="NAME" x="147.574" y="164.211" size="1.778" layer="95"/>
+<attribute name="VALUE" x="147.574" y="161.671" size="1.778" layer="96"/>
 </instance>
 <instance part="C43" gate="G$1" x="101.6" y="40.64" smashed="yes">
-<attribute name="NAME" x="104.394" y="44.831" size="1.778" layer="95"/>
-<attribute name="VALUE" x="104.394" y="37.211" size="1.778" layer="96"/>
+<attribute name="NAME" x="102.362" y="43.815" size="1.778" layer="95"/>
+<attribute name="VALUE" x="102.87" y="38.735" size="1.778" layer="96"/>
 </instance>
 <instance part="C44" gate="G$1" x="111.76" y="40.64" smashed="yes">
-<attribute name="NAME" x="114.554" y="44.831" size="1.778" layer="95"/>
-<attribute name="VALUE" x="114.554" y="37.211" size="1.778" layer="96"/>
+<attribute name="NAME" x="112.268" y="43.815" size="1.778" layer="95"/>
+<attribute name="VALUE" x="113.03" y="38.735" size="1.778" layer="96"/>
 </instance>
+<instance part="X_43" gate="G$1" x="137.16" y="33.02" smashed="yes"/>
+<instance part="X_46" gate="G$1" x="226.06" y="33.02" smashed="yes"/>
+<instance part="X_47" gate="G$1" x="200.66" y="33.02" smashed="yes"/>
+<instance part="X_48" gate="G$1" x="137.16" y="53.34" smashed="yes"/>
+<instance part="X_49" gate="G$1" x="137.16" y="53.34" smashed="yes"/>
+<instance part="X_50" gate="G$1" x="124.46" y="81.28" smashed="yes"/>
+<instance part="X_51" gate="G$1" x="132.08" y="78.74" smashed="yes"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="0" class="0">
 <segment>
-<wire x1="20.32" y1="83.82" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="81.28" x2="15.24" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="81.28" x2="10.16" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="81.28" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="83.82" x2="17.78" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="81.28" x2="15.24" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="81.28" x2="7.62" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="81.28" x2="7.62" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C20" gate="G$1" pin="1"/>
 <pinref part="C21" gate="G$1" pin="1"/>
 <pinref part="X_36" gate="G$1" pin="0"/>
@@ -7858,7 +8434,7 @@ Output Current: 4A</description>
 </segment>
 <segment>
 <pinref part="C22" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="22.86" x2="15.24" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="33.02" x2="15.24" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="X_37" gate="G$1" pin="0"/>
 </segment>
 <segment>
@@ -7869,7 +8445,7 @@ Output Current: 4A</description>
 <segment>
 <pinref part="BUCK_CONVERTER2" gate="A" pin="FB"/>
 <wire x1="33.02" y1="43.18" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="43.18" x2="25.4" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="43.18" x2="25.4" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="X_39" gate="G$1" pin="0"/>
 </segment>
 <segment>
@@ -7893,95 +8469,25 @@ Output Current: 4A</description>
 </segment>
 <segment>
 <pinref part="BUCK_CONVERTER2" gate="A" pin="SGND"/>
-<wire x1="68.58" y1="35.56" x2="68.58" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="35.56" x2="68.58" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="X_41" gate="G$1" pin="0"/>
-</segment>
-<segment>
-<wire x1="157.48" y1="119.38" x2="157.48" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="109.22" x2="154.94" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="109.22" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="109.22" x2="147.32" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="109.22" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="109.22" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="109.22" x2="139.7" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="C27" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="134.62" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
-<junction x="144.78" y="109.22"/>
-<pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="127" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
-<junction x="152.4" y="109.22"/>
-<wire x1="157.48" y1="124.46" x2="154.94" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="124.46" x2="154.94" y2="109.22" width="0.1524" layer="91"/>
-<junction x="154.94" y="109.22"/>
-<junction x="149.86" y="109.22"/>
-<pinref part="U11" gate="G$1" pin="AGND"/>
-<pinref part="U11" gate="G$1" pin="SYNC"/>
-<wire x1="147.32" y1="109.22" x2="147.32" y2="106.68" width="0.1524" layer="91"/>
-<junction x="147.32" y="109.22"/>
-<pinref part="X_42" gate="G$1" pin="0"/>
 </segment>
 <segment>
 <pinref part="C29" gate="G$1" pin="1"/>
 <pinref part="X_44" gate="G$1" pin="0"/>
 <pinref part="C41" gate="G$1" pin="1"/>
-<wire x1="223.52" y1="157.48" x2="223.52" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="154.94" x2="215.9" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="154.94" x2="208.28" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="154.94" x2="208.28" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="157.48" x2="226.06" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="154.94" x2="215.9" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="154.94" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="154.94" x2="205.74" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="C40" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="157.48" x2="215.9" y2="154.94" width="0.1524" layer="91"/>
 <junction x="215.9" y="154.94"/>
 </segment>
 <segment>
-<pinref part="C37" gate="G$1" pin="1"/>
-<wire x1="233.68" y1="50.8" x2="233.68" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="38.1" x2="226.06" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="38.1" x2="220.98" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="38.1" x2="220.98" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="38.1" x2="226.06" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="33.02" x2="200.66" y2="33.02" width="0.1524" layer="91"/>
-<junction x="226.06" y="38.1"/>
-<pinref part="R24" gate="G$1" pin="2"/>
-<wire x1="200.66" y1="33.02" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="33.02" x2="137.16" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="33.02" x2="137.16" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="33.02" x2="124.46" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="33.02" x2="124.46" y2="58.42" width="0.1524" layer="91"/>
-<junction x="137.16" y="33.02"/>
-<pinref part="BUCKCONVERTER1" gate="G$1" pin="GND"/>
-<wire x1="124.46" y1="58.42" x2="144.78" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="C34" gate="G$1" pin="2"/>
-<wire x1="132.08" y1="81.28" x2="129.54" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="81.28" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="76.2" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="C35" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="76.2" x2="119.38" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="76.2" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="76.2" x2="124.46" y2="58.42" width="0.1524" layer="91"/>
-<junction x="124.46" y="76.2"/>
-<junction x="124.46" y="58.42"/>
-<wire x1="152.4" y1="30.48" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
-<junction x="152.4" y="33.02"/>
-<pinref part="X_43" gate="G$1" pin="0"/>
-<pinref part="R27" gate="G$1" pin="2"/>
-<wire x1="200.66" y1="35.56" x2="200.66" y2="33.02" width="0.1524" layer="91"/>
-<junction x="200.66" y="33.02"/>
-<wire x1="233.68" y1="38.1" x2="241.3" y2="38.1" width="0.1524" layer="91"/>
-<junction x="233.68" y="38.1"/>
-<pinref part="C39" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="38.1" x2="248.92" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="38.1" x2="248.92" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="C38" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="50.8" x2="241.3" y2="38.1" width="0.1524" layer="91"/>
-<junction x="241.3" y="38.1"/>
-</segment>
-<segment>
 <pinref part="BUCK_CONVERTED3" gate="G$1" pin="0"/>
 <pinref part="R22" gate="G$1" pin="1"/>
-<wire x1="233.68" y1="134.62" x2="233.68" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="238.252" y1="136.398" x2="238.252" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U11" gate="G$1" pin="PGND1"/>
@@ -7994,32 +8500,71 @@ Output Current: 4A</description>
 <wire x1="200.66" y1="121.92" x2="200.66" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="109.22" x2="190.5" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="C32" gate="G$1" pin="1"/>
-<wire x1="210.82" y1="109.22" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="109.22" x2="200.66" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="134.62" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
-<junction x="205.74" y="109.22"/>
+<wire x1="210.82" y1="109.22" x2="200.66" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="134.62" x2="210.82" y2="109.22" width="0.1524" layer="91"/>
+<junction x="210.82" y="109.22"/>
 <wire x1="210.82" y1="106.68" x2="210.82" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="BUCK_CONVERTED1" gate="G$1" pin="0"/>
 </segment>
 <segment>
 <pinref part="C26" gate="G$1" pin="1"/>
 <pinref part="X_45" gate="G$1" pin="0"/>
-<wire x1="144.78" y1="160.02" x2="147.32" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="160.02" x2="144.78" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="C42" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="160.02" x2="147.32" y2="160.02" width="0.1524" layer="91"/>
-<junction x="147.32" y="160.02"/>
+<junction x="144.78" y="160.02"/>
+<wire x1="144.78" y1="160.02" x2="147.32" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R24" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="33.02" x2="137.16" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="X_43" gate="G$1" pin="0"/>
+</segment>
+<segment>
+<pinref part="C37" gate="G$1" pin="1"/>
+<wire x1="228.6" y1="50.8" x2="228.6" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="38.1" x2="226.06" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="R26" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="38.1" x2="220.98" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="38.1" x2="220.98" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="38.1" x2="226.06" y2="33.02" width="0.1524" layer="91"/>
+<junction x="226.06" y="38.1"/>
+<wire x1="228.6" y1="38.1" x2="238.76" y2="38.1" width="0.1524" layer="91"/>
+<junction x="228.6" y="38.1"/>
+<pinref part="C39" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="38.1" x2="248.92" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="38.1" x2="248.92" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="C38" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="50.8" x2="238.76" y2="38.1" width="0.1524" layer="91"/>
+<junction x="238.76" y="38.1"/>
+<pinref part="X_46" gate="G$1" pin="0"/>
+</segment>
+<segment>
+<pinref part="C35" gate="G$1" pin="1"/>
+<pinref part="X_50" gate="G$1" pin="0"/>
+<wire x1="124.46" y1="83.82" x2="124.46" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C34" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="81.28" x2="132.08" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="X_51" gate="G$1" pin="0"/>
+<wire x1="132.08" y1="81.28" x2="132.08" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R27" gate="G$1" pin="2"/>
+<pinref part="X_47" gate="G$1" pin="0"/>
+<wire x1="200.66" y1="35.56" x2="200.66" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
 <wire x1="33.02" y1="35.56" x2="33.02" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="27.94" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="27.94" x2="76.454" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="BUCK_CONVERTER2" gate="A" pin="RTN"/>
 <pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="45.72" x2="86.36" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="27.94" x2="73.66" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="43.18" x2="86.36" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="76.454" y1="27.94" x2="76.454" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="76.454" y1="43.18" x2="86.36" y2="43.18" width="0.1524" layer="91"/>
 <junction x="86.36" y="43.18"/>
 </segment>
 </net>
@@ -8034,12 +8579,13 @@ Output Current: 4A</description>
 <segment>
 <pinref part="C24" gate="G$1" pin="2"/>
 <pinref part="BUCK_CONVERTER2" gate="A" pin="BST"/>
+<wire x1="68.58" y1="68.58" x2="68.58" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$45" class="0">
 <segment>
 <pinref part="C24" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="58.42" x2="68.58" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="58.42" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="BUCK_CONVERTER2" gate="A" pin="SW"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="68.58" y1="55.88" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
@@ -8053,7 +8599,7 @@ Output Current: 4A</description>
 <pinref part="BUCK_CONVERTER2" gate="A" pin="RON/SD"/>
 <wire x1="33.02" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="71.12" x2="30.48" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="71.12" x2="30.48" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$48" class="0">
@@ -8075,25 +8621,18 @@ Output Current: 4A</description>
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="157.48" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="157.48" x2="121.92" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="U11" gate="G$1" pin="EN"/>
-<wire x1="139.7" y1="154.94" x2="139.7" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="154.94" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
-<junction x="139.7" y="154.94"/>
+<wire x1="121.92" y1="154.94" x2="121.92" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="154.94" x2="121.92" y2="154.94" width="0.1524" layer="91"/>
+<junction x="121.92" y="154.94"/>
 </segment>
 </net>
 <net name="N$53" class="0">
 <segment>
 <pinref part="C27" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="142.24" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="142.24" x2="142.24" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U11" gate="G$1" pin="SS/TRK"/>
-</segment>
-</net>
-<net name="N$54" class="0">
-<segment>
-<pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="137.16" x2="152.4" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="U11" gate="G$1" pin="RT"/>
 </segment>
 </net>
 <net name="N$56" class="0">
@@ -8120,16 +8659,15 @@ Output Current: 4A</description>
 <net name="N$58" class="0">
 <segment>
 <pinref part="U11" gate="G$1" pin="FB"/>
-<wire x1="187.96" y1="147.32" x2="187.96" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="149.86" x2="233.68" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="147.32" x2="190.5" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="149.86" x2="238.252" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="1"/>
 <pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="233.68" y1="154.94" x2="233.68" y2="152.4" width="0.1524" layer="91"/>
+<junction x="238.252" y="149.86"/>
+<wire x1="238.252" y1="149.86" x2="237.998" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="238.252" y1="149.86" x2="243.84" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="C30" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="154.94" x2="241.3" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="152.4" x2="233.68" y2="152.4" width="0.1524" layer="91"/>
-<junction x="233.68" y="152.4"/>
-<wire x1="233.68" y1="149.86" x2="233.68" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="149.86" x2="243.84" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$59" class="0">
@@ -8144,51 +8682,49 @@ Output Current: 4A</description>
 </net>
 <net name="VCC" class="0">
 <segment>
-<wire x1="162.56" y1="91.44" x2="124.46" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="91.44" x2="124.46" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="91.44" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="91.44" x2="109.22" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="2"/>
 <wire x1="157.48" y1="167.64" x2="154.94" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="167.64" x2="144.78" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="167.64" x2="139.7" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="167.64" x2="134.62" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="167.64" x2="121.92" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="162.56" x2="154.94" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="162.56" x2="154.94" y2="167.64" width="0.1524" layer="91"/>
 <junction x="154.94" y="167.64"/>
 <pinref part="C26" gate="G$1" pin="2"/>
-<junction x="144.78" y="167.64"/>
+<junction x="134.62" y="167.64"/>
 <pinref part="U11" gate="G$1" pin="VIN1"/>
 <pinref part="U11" gate="G$1" pin="VIN2"/>
 <wire x1="33.02" y1="96.52" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="96.52" x2="25.4" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="96.52" x2="20.32" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="96.52" x2="20.32" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="96.52" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="96.52" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
-<junction x="20.32" y="96.52"/>
+<wire x1="25.4" y1="96.52" x2="17.78" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="96.52" x2="17.78" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="96.52" x2="7.62" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="96.52" x2="7.62" y2="91.44" width="0.1524" layer="91"/>
+<junction x="17.78" y="96.52"/>
 <pinref part="C20" gate="G$1" pin="2"/>
 <pinref part="C21" gate="G$1" pin="2"/>
 <pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="91.44" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="93.98" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
 <junction x="30.48" y="96.52"/>
 <pinref part="BUCK_CONVERTER2" gate="A" pin="VIN"/>
 <wire x1="25.4" y1="96.52" x2="25.4" y2="167.64" width="0.1524" layer="91"/>
 <junction x="25.4" y="96.52"/>
-<wire x1="25.4" y1="167.64" x2="124.46" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="167.64" x2="152.4" y2="167.64" width="0.1524" layer="91"/>
-<junction x="124.46" y="167.64"/>
+<wire x1="25.4" y1="167.64" x2="109.22" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="167.64" x2="144.78" y2="167.64" width="0.1524" layer="91"/>
+<junction x="109.22" y="167.64"/>
 <junction x="25.4" y="167.64"/>
 <pinref part="SUPPLY17" gate="G$1" pin="VCC"/>
 <pinref part="BUCKCONVERTER1" gate="G$1" pin="VIN"/>
 <pinref part="C35" gate="G$1" pin="2"/>
-<wire x1="152.4" y1="167.64" x2="154.94" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="91.44" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="91.44" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
-<junction x="124.46" y="91.44"/>
+<wire x1="144.78" y1="167.64" x2="154.94" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="91.44" x2="124.46" y2="91.44" width="0.1524" layer="91"/>
+<junction x="109.22" y="91.44"/>
 <pinref part="BUCKCONVERTER1" gate="G$1" pin="EN"/>
 <wire x1="144.78" y1="71.12" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="71.12" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="91.44" x2="124.46" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="C42" gate="G$1" pin="2"/>
-<junction x="152.4" y="167.64"/>
+<junction x="144.78" y="167.64"/>
 </segment>
 </net>
 <net name="12V" class="0">
@@ -8222,51 +8758,45 @@ Output Current: 4A</description>
 <pinref part="R21" gate="G$1" pin="2"/>
 <pinref part="L5" gate="G$1" pin="2"/>
 <pinref part="C29" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="165.1" x2="208.28" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="167.64" x2="205.74" y2="167.64" width="0.1524" layer="91"/>
-<junction x="208.28" y="167.64"/>
-<wire x1="208.28" y1="167.64" x2="215.9" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="167.64" x2="223.52" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="167.64" x2="233.68" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="167.64" x2="233.68" y2="165.1" width="0.1524" layer="91"/>
-<junction x="233.68" y="167.64"/>
-<wire x1="233.68" y1="167.64" x2="241.3" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="167.64" x2="241.3" y2="162.56" width="0.1524" layer="91"/>
-<junction x="241.3" y="167.64"/>
-<wire x1="241.3" y1="167.64" x2="251.46" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="167.64" x2="241.3" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="119.38" x2="248.92" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="165.1" x2="205.74" y2="167.64" width="0.1524" layer="91"/>
+<junction x="205.74" y="167.64"/>
+<wire x1="205.74" y1="167.64" x2="215.9" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="167.64" x2="226.06" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="167.64" x2="237.998" y2="167.64" width="0.1524" layer="91"/>
+<junction x="237.998" y="167.64"/>
+<wire x1="237.998" y1="167.64" x2="243.84" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="167.64" x2="243.84" y2="162.56" width="0.1524" layer="91"/>
+<junction x="243.84" y="167.64"/>
+<wire x1="251.46" y1="167.64" x2="243.84" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="119.38" x2="251.46" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="119.38" x2="226.06" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="119.38" x2="248.92" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="119.38" x2="226.06" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="129.54" x2="210.82" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="119.38" x2="251.46" y2="119.38" width="0.1524" layer="91"/>
 <junction x="226.06" y="119.38"/>
-<wire x1="210.82" y1="129.54" x2="210.82" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="119.38" x2="226.06" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="C32" gate="G$1" pin="2"/>
 <pinref part="U11" gate="G$1" pin="BIAS"/>
-<wire x1="187.96" y1="144.78" x2="205.74" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="144.78" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="144.78" x2="205.74" y2="144.78" width="0.1524" layer="91"/>
-<junction x="205.74" y="144.78"/>
+<wire x1="187.96" y1="144.78" x2="210.82" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="144.78" x2="210.82" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="144.78" x2="210.82" y2="144.78" width="0.1524" layer="91"/>
+<junction x="210.82" y="144.78"/>
 <pinref part="C40" gate="G$1" pin="2"/>
 <wire x1="215.9" y1="165.1" x2="215.9" y2="167.64" width="0.1524" layer="91"/>
 <junction x="215.9" y="167.64"/>
 <pinref part="C41" gate="G$1" pin="2"/>
-<wire x1="223.52" y1="165.1" x2="223.52" y2="167.64" width="0.1524" layer="91"/>
-<junction x="223.52" y="167.64"/>
+<wire x1="226.06" y1="165.1" x2="226.06" y2="167.64" width="0.1524" layer="91"/>
+<junction x="226.06" y="167.64"/>
 </segment>
 </net>
 <net name="N$61" class="0">
 <segment>
 <pinref part="L6" gate="G$1" pin="1"/>
-<wire x1="180.34" y1="81.28" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="81.28" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="BUCKCONVERTER1" gate="G$1" pin="LX"/>
 <pinref part="C36" gate="G$1" pin="1"/>
-<wire x1="195.58" y1="81.28" x2="198.12" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="71.12" x2="195.58" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="71.12" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
-<junction x="195.58" y="81.28"/>
+<wire x1="190.5" y1="81.28" x2="198.12" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="71.12" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
+<junction x="190.5" y="81.28"/>
 </segment>
 </net>
 <net name="N$63" class="0">
@@ -8308,28 +8838,28 @@ Output Current: 4A</description>
 <wire x1="213.36" y1="81.28" x2="220.98" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="81.28" x2="220.98" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="SUPPLY19" gate="G$1" pin="5V"/>
-<wire x1="220.98" y1="81.28" x2="233.68" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="81.28" x2="241.3" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="81.28" x2="248.92" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="81.28" x2="228.6" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="81.28" x2="238.76" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="81.28" x2="248.92" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="81.28" x2="254" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="254" y1="81.28" x2="254" y2="86.36" width="0.1524" layer="91"/>
 <junction x="220.98" y="81.28"/>
 <pinref part="C37" gate="G$1" pin="2"/>
-<wire x1="233.68" y1="58.42" x2="233.68" y2="81.28" width="0.1524" layer="91"/>
-<junction x="233.68" y="81.28"/>
+<wire x1="228.6" y1="58.42" x2="228.6" y2="81.28" width="0.1524" layer="91"/>
+<junction x="228.6" y="81.28"/>
 <pinref part="C39" gate="G$1" pin="2"/>
 <wire x1="248.92" y1="58.42" x2="248.92" y2="81.28" width="0.1524" layer="91"/>
 <junction x="248.92" y="81.28"/>
 <pinref part="C38" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="81.28" x2="241.3" y2="58.42" width="0.1524" layer="91"/>
-<junction x="241.3" y="81.28"/>
+<wire x1="238.76" y1="81.28" x2="238.76" y2="58.42" width="0.1524" layer="91"/>
+<junction x="238.76" y="81.28"/>
 </segment>
 </net>
 <net name="SS" class="0">
 <segment>
 <pinref part="BUCKCONVERTER1" gate="G$1" pin="SS"/>
 <pinref part="C34" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="81.28" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="81.28" x2="142.24" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$62" class="0">
@@ -8348,6 +8878,59 @@ Output Current: 4A</description>
 <wire x1="213.36" y1="119.38" x2="195.58" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="119.38" x2="195.58" y2="121.92" width="0.1524" layer="91"/>
 </segment>
+</net>
+<net name="N$51" class="0">
+<segment>
+<pinref part="U11" gate="G$1" pin="RT"/>
+<wire x1="157.48" y1="137.16" x2="149.86" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="137.16" x2="149.86" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SYNC" class="0">
+<segment>
+<pinref part="U11" gate="G$1" pin="SYNC"/>
+<wire x1="157.48" y1="124.46" x2="154.94" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="119.38" x2="157.48" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="109.22" x2="154.94" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="109.22" x2="147.32" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="109.22" x2="142.24" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="109.22" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="109.22" x2="121.92" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="C27" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="134.62" x2="142.24" y2="109.22" width="0.1524" layer="91"/>
+<junction x="142.24" y="109.22"/>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="119.38" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
+<junction x="149.86" y="109.22"/>
+<junction x="149.86" y="109.22"/>
+<pinref part="U11" gate="G$1" pin="AGND"/>
+<wire x1="147.32" y1="109.22" x2="147.32" y2="106.68" width="0.1524" layer="91"/>
+<junction x="147.32" y="109.22"/>
+<pinref part="X_42" gate="G$1" pin="0"/>
+<wire x1="154.94" y1="124.46" x2="154.94" y2="109.22" width="0.1524" layer="91"/>
+<junction x="154.94" y="109.22"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="BUCKCONVERTER1" gate="G$1" pin="GND"/>
+<wire x1="137.16" y1="58.42" x2="144.78" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="X_48" gate="G$1" pin="0"/>
+<pinref part="X_49" gate="G$1" pin="0"/>
+<wire x1="137.16" y1="58.42" x2="137.16" y2="53.34" width="0.1524" layer="91"/>
+<junction x="137.16" y="53.34"/>
+</segment>
+</net>
+<net name="1" class="0">
+</net>
+<net name="2" class="0">
+</net>
+<net name="3" class="0">
+</net>
+<net name="4" class="0">
 </net>
 </nets>
 </sheet>
@@ -8373,6 +8956,12 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="8.4" severity="warning">
+Since Version 8.4, EAGLE supports properties for SPICE simulation. 
+Probes in schematics and SPICE mapping objects found in parts and library devices
+will not be understood with this version. Update EAGLE to the latest version
+for full support of SPICE simulation. 
 </note>
 </compatibility>
 </eagle>
