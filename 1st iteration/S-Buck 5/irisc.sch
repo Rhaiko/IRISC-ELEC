@@ -1272,6 +1272,61 @@ Source: &lt;a href="http://datasheet.octopart.com/AOZ1284PI-Alpha-&amp;-Omega-Se
 </deviceset>
 </devicesets>
 </library>
+<library name="DO-214AC">
+<packages>
+<package name="DO-214AC">
+<description>&lt;b&gt;SURFACE MOUNT GENERAL RECTIFIER&lt;/b&gt; JEDEC DO-214AC molded platic body&lt;p&gt;
+Method 2026&lt;br&gt;
+Source: http://www.kingtronics.com/SMD_M7/M7_SMD_4007.pdf</description>
+<wire x1="-2.15" y1="1.3" x2="2.15" y2="1.3" width="0.2032" layer="51"/>
+<wire x1="2.15" y1="1.3" x2="2.15" y2="-1.3" width="0.2032" layer="51"/>
+<wire x1="2.15" y1="-1.3" x2="-2.15" y2="-1.3" width="0.2032" layer="51"/>
+<wire x1="-2.15" y1="-1.3" x2="-2.15" y2="1.3" width="0.2032" layer="51"/>
+<wire x1="-1.035" y1="1.3" x2="1.025" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="1.025" y1="-1.3" x2="-1.035" y2="-1.3" width="0.2032" layer="21"/>
+<text x="-2.870509375" y="2.15285" size="1.435209375" layer="25">&gt;NAME</text>
+<text x="-2.879459375" y="-3.599359375" size="1.4397" layer="27">&gt;VALUE</text>
+<rectangle x1="-3.219009375" y1="-1.2534" x2="-2.175" y2="1.1" layer="51"/>
+<rectangle x1="2.439659375" y1="-1.23381875" x2="2.825" y2="1.1" layer="51" rot="R180"/>
+<rectangle x1="-1.199159375" y1="-1.37938125" x2="-0.39" y2="1.225" layer="21"/>
+<rectangle x1="-1.97085" y1="-1.379559375" x2="-1.075" y2="1.225" layer="51"/>
+<smd name="C" x="-2.025" y="0" dx="1.8" dy="2.4" layer="1"/>
+<smd name="A" x="2.025" y="0" dx="1.8" dy="2.4" layer="1" rot="R180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SCHOTTY-DIODE-IRISC">
+<wire x1="0" y1="3.81" x2="8.128" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="8.128" y1="3.81" x2="8.128" y2="0" width="0.1524" layer="94"/>
+<wire x1="8.128" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="3.81" width="0.1524" layer="94"/>
+<pin name="P$1" x="-2.54" y="1.016" length="short"/>
+<pin name="P$2" x="10.668" y="2.54" length="short" rot="R180"/>
+<text x="-2.54" y="5.08" size="1.778" layer="94">Schotty diode</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SCHOTTY-DIODE-IRISC" uservalue="yes">
+<description>Footprint : DO-214AB 
+
+,8 A, 60 V</description>
+<gates>
+<gate name="G$1" symbol="SCHOTTY-DIODE-IRISC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO-214AC">
+<connects>
+<connect gate="G$1" pin="P$1" pad="A"/>
+<connect gate="G$1" pin="P$2" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1386,6 +1441,7 @@ Source: &lt;a href="http://datasheet.octopart.com/AOZ1284PI-Alpha-&amp;-Omega-Se
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
 <part name="GND7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="U$1" library="DO-214AC" deviceset="SCHOTTY-DIODE-IRISC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1474,6 +1530,7 @@ Source: &lt;a href="http://datasheet.octopart.com/AOZ1284PI-Alpha-&amp;-Omega-Se
 <instance part="GND7" gate="1" x="99.06" y="22.86" smashed="yes">
 <attribute name="VALUE" x="99.06" y="22.606" size="1.778" layer="96" align="top-center"/>
 </instance>
+<instance part="U$1" gate="G$1" x="50.8" y="68.58" smashed="yes" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1529,8 +1586,12 @@ Source: &lt;a href="http://datasheet.octopart.com/AOZ1284PI-Alpha-&amp;-Omega-Se
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
-<wire x1="76.2" y1="63.5" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="63.5" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="U$1" gate="G$1" pin="P$1"/>
+<wire x1="49.784" y1="63.5" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="63.5" x2="49.784" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="49.784" y1="63.5" x2="49.784" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CSS" gate="G$1" pin="1"/>
@@ -1598,11 +1659,15 @@ Source: &lt;a href="http://datasheet.octopart.com/AOZ1284PI-Alpha-&amp;-Omega-Se
 <wire x1="71.12" y1="68.58" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="81.28" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="81.28" x2="60.96" y2="81.28" width="0.1524" layer="91"/>
 <junction x="71.12" y="81.28"/>
 <pinref part="CBST" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="66.04" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$2"/>
+<wire x1="48.26" y1="79.248" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
