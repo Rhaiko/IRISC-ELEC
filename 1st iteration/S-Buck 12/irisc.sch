@@ -1895,7 +1895,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </spice>
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
-<part name="C4" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="22 pF">
+<part name="C4" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:7562178" deviceset="WCAP-CSGP_0805" device="_WAVE" package3d_urn="urn:adsk.eagle:package:7562359/1" technology="_885012006018" value="22 nF">
 <spice>
 <pinmapping isusermap="yes" isdevicewide="yes">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
