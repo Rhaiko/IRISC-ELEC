@@ -95,18 +95,18 @@ Created by Upverter.com</description>
 <smd name="G5" x="0.8" y="-2.4" dx="0.5" dy="0.5" layer="1" roundness="100"/>
 <smd name="G6" x="1.6" y="-2.4" dx="0.5" dy="0.5" layer="1" roundness="100"/>
 </package>
-<package name="HDRVR20W64P762X254_2X10_2540X1016X254B" urn="urn:adsk.eagle:footprint:10198892/1">
-<description>Double-row, 20-pin Receptacle Header (Female) Straight, 7.62 mm (0.30 in) row pitch, 2.54 mm (0.10 in) col pitch, 2.54 mm insulator length, 25.40 X 10.16 X 2.54 mm body
-&lt;p&gt;Double-row (2X10), 20-pin Receptacle Header (Female) Straight package with 7.62 mm (0.30 in) row pitch, 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 2.54 mm insulator length with overall size 25.40 X 10.16 X 2.54 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+<package name="HDRV20W64P254_2X10_1016X508X838B" urn="urn:adsk.eagle:footprint:10198917/1">
+<description>Double-row, 20-pin Pin Header (Male) Straight, 2.54 mm (0.10 in) row pitch, 2.54 mm (0.10 in) col pitch, 5.84 mm mating length, 10.16 X 5.08 X 8.38 mm body
+&lt;p&gt;Double-row (2X10), 20-pin Pin Header (Male) Straight package with 2.54 mm (0.10 in) row pitch, 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 5.84 mm mating length with overall size 10.16 X 5.08 X 8.38 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
 <circle x="0" y="1.774" radius="0.25" width="0" layer="21"/>
-<wire x1="24.13" y1="-8.89" x2="-1.27" y2="-8.89" width="0.12" layer="21"/>
-<wire x1="-1.27" y1="-8.89" x2="-1.27" y2="1.27" width="0.12" layer="21"/>
-<wire x1="-1.27" y1="1.27" x2="24.13" y2="1.27" width="0.12" layer="21"/>
-<wire x1="24.13" y1="1.27" x2="24.13" y2="-8.89" width="0.12" layer="21"/>
-<wire x1="24.13" y1="-8.89" x2="-1.27" y2="-8.89" width="0.12" layer="51"/>
-<wire x1="-1.27" y1="-8.89" x2="-1.27" y2="1.27" width="0.12" layer="51"/>
-<wire x1="-1.27" y1="1.27" x2="24.13" y2="1.27" width="0.12" layer="51"/>
-<wire x1="24.13" y1="1.27" x2="24.13" y2="-8.89" width="0.12" layer="51"/>
+<wire x1="23.9678" y1="-3.81" x2="-1.1078" y2="-3.81" width="0.12" layer="21"/>
+<wire x1="-1.1078" y1="-3.81" x2="-1.1078" y2="1.27" width="0.12" layer="21"/>
+<wire x1="-1.1078" y1="1.27" x2="23.9678" y2="1.27" width="0.12" layer="21"/>
+<wire x1="23.9678" y1="1.27" x2="23.9678" y2="-3.81" width="0.12" layer="21"/>
+<wire x1="16.51" y1="-3.81" x2="6.35" y2="-3.81" width="0.12" layer="51"/>
+<wire x1="6.35" y1="-3.81" x2="6.35" y2="1.27" width="0.12" layer="51"/>
+<wire x1="6.35" y1="1.27" x2="16.51" y2="1.27" width="0.12" layer="51"/>
+<wire x1="16.51" y1="1.27" x2="16.51" y2="-3.81" width="0.12" layer="51"/>
 <pad name="1" x="0" y="0" drill="1.1051" diameter="1.7051"/>
 <pad name="2" x="2.54" y="0" drill="1.1051" diameter="1.7051"/>
 <pad name="3" x="5.08" y="0" drill="1.1051" diameter="1.7051"/>
@@ -117,24 +117,66 @@ Created by Upverter.com</description>
 <pad name="8" x="17.78" y="0" drill="1.1051" diameter="1.7051"/>
 <pad name="9" x="20.32" y="0" drill="1.1051" diameter="1.7051"/>
 <pad name="10" x="22.86" y="0" drill="1.1051" diameter="1.7051"/>
-<pad name="11" x="22.86" y="-7.62" drill="1.1051" diameter="1.7051"/>
-<pad name="12" x="20.32" y="-7.62" drill="1.1051" diameter="1.7051"/>
-<pad name="13" x="17.78" y="-7.62" drill="1.1051" diameter="1.7051"/>
-<pad name="14" x="15.24" y="-7.62" drill="1.1051" diameter="1.7051"/>
-<pad name="15" x="12.7" y="-7.62" drill="1.1051" diameter="1.7051"/>
-<pad name="16" x="10.16" y="-7.62" drill="1.1051" diameter="1.7051"/>
-<pad name="17" x="7.62" y="-7.62" drill="1.1051" diameter="1.7051"/>
-<pad name="18" x="5.08" y="-7.62" drill="1.1051" diameter="1.7051"/>
-<pad name="19" x="2.54" y="-7.62" drill="1.1051" diameter="1.7051"/>
-<pad name="20" x="0" y="-7.62" drill="1.1051" diameter="1.7051"/>
+<pad name="11" x="22.86" y="-2.54" drill="1.1051" diameter="1.7051"/>
+<pad name="12" x="20.32" y="-2.54" drill="1.1051" diameter="1.7051"/>
+<pad name="13" x="17.78" y="-2.54" drill="1.1051" diameter="1.7051"/>
+<pad name="14" x="15.24" y="-2.54" drill="1.1051" diameter="1.7051"/>
+<pad name="15" x="12.7" y="-2.54" drill="1.1051" diameter="1.7051"/>
+<pad name="16" x="10.16" y="-2.54" drill="1.1051" diameter="1.7051"/>
+<pad name="17" x="7.62" y="-2.54" drill="1.1051" diameter="1.7051"/>
+<pad name="18" x="5.08" y="-2.54" drill="1.1051" diameter="1.7051"/>
+<pad name="19" x="2.54" y="-2.54" drill="1.1051" diameter="1.7051"/>
+<pad name="20" x="0" y="-2.54" drill="1.1051" diameter="1.7051"/>
 <text x="0" y="2.659" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-9.525" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="0" y="-4.445" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="HDRVR20W64P762X254_2X10_2540X1016X254B" urn="urn:adsk.eagle:footprint:10198928/1">
+<description>Double-row, 20-pin Receptacle Header (Female) Straight, 7.62 mm (0.30 in) row pitch, 2.54 mm (0.10 in) col pitch, 2.54 mm insulator length, 25.40 X 10.16 X 2.54 mm body
+&lt;p&gt;Double-row (2X10), 20-pin Receptacle Header (Female) Straight package with 7.62 mm (0.30 in) row pitch, 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 2.54 mm insulator length with overall size 25.40 X 10.16 X 2.54 mm, pin pattern - counter-clockwise from bottom left&lt;/p&gt;</description>
+<circle x="0" y="-1.774" radius="0.25" width="0" layer="21"/>
+<wire x1="24.13" y1="-1.27" x2="-1.27" y2="-1.27" width="0.12" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="8.89" width="0.12" layer="21"/>
+<wire x1="-1.27" y1="8.89" x2="24.13" y2="8.89" width="0.12" layer="21"/>
+<wire x1="24.13" y1="8.89" x2="24.13" y2="-1.27" width="0.12" layer="21"/>
+<wire x1="24.13" y1="-1.27" x2="-1.27" y2="-1.27" width="0.12" layer="51"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="8.89" width="0.12" layer="51"/>
+<wire x1="-1.27" y1="8.89" x2="24.13" y2="8.89" width="0.12" layer="51"/>
+<wire x1="24.13" y1="8.89" x2="24.13" y2="-1.27" width="0.12" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.1051" diameter="1.7051"/>
+<pad name="2" x="2.54" y="0" drill="1.1051" diameter="1.7051"/>
+<pad name="3" x="5.08" y="0" drill="1.1051" diameter="1.7051"/>
+<pad name="4" x="7.62" y="0" drill="1.1051" diameter="1.7051"/>
+<pad name="5" x="10.16" y="0" drill="1.1051" diameter="1.7051"/>
+<pad name="6" x="12.7" y="0" drill="1.1051" diameter="1.7051"/>
+<pad name="7" x="15.24" y="0" drill="1.1051" diameter="1.7051"/>
+<pad name="8" x="17.78" y="0" drill="1.1051" diameter="1.7051"/>
+<pad name="9" x="20.32" y="0" drill="1.1051" diameter="1.7051"/>
+<pad name="10" x="22.86" y="0" drill="1.1051" diameter="1.7051"/>
+<pad name="11" x="22.86" y="7.62" drill="1.1051" diameter="1.7051"/>
+<pad name="12" x="20.32" y="7.62" drill="1.1051" diameter="1.7051"/>
+<pad name="13" x="17.78" y="7.62" drill="1.1051" diameter="1.7051"/>
+<pad name="14" x="15.24" y="7.62" drill="1.1051" diameter="1.7051"/>
+<pad name="15" x="12.7" y="7.62" drill="1.1051" diameter="1.7051"/>
+<pad name="16" x="10.16" y="7.62" drill="1.1051" diameter="1.7051"/>
+<pad name="17" x="7.62" y="7.62" drill="1.1051" diameter="1.7051"/>
+<pad name="18" x="5.08" y="7.62" drill="1.1051" diameter="1.7051"/>
+<pad name="19" x="2.54" y="7.62" drill="1.1051" diameter="1.7051"/>
+<pad name="20" x="0" y="7.62" drill="1.1051" diameter="1.7051"/>
+<text x="0" y="9.525" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.659" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="HDRVR20W64P762X254_2X10_2540X1016X254B" urn="urn:adsk.eagle:package:10198859/1" type="model">
+<package3d name="HDRV20W64P254_2X10_1016X508X838B" urn="urn:adsk.eagle:package:10198916/1" type="model">
+<description>Double-row, 20-pin Pin Header (Male) Straight, 2.54 mm (0.10 in) row pitch, 2.54 mm (0.10 in) col pitch, 5.84 mm mating length, 10.16 X 5.08 X 8.38 mm body
+&lt;p&gt;Double-row (2X10), 20-pin Pin Header (Male) Straight package with 2.54 mm (0.10 in) row pitch, 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 5.84 mm mating length with overall size 10.16 X 5.08 X 8.38 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="HDRV20W64P254_2X10_1016X508X838B"/>
+</packageinstances>
+</package3d>
+<package3d name="HDRVR20W64P762X254_2X10_2540X1016X254B" urn="urn:adsk.eagle:package:10198920/1" type="model">
 <description>Double-row, 20-pin Receptacle Header (Female) Straight, 7.62 mm (0.30 in) row pitch, 2.54 mm (0.10 in) col pitch, 2.54 mm insulator length, 25.40 X 10.16 X 2.54 mm body
-&lt;p&gt;Double-row (2X10), 20-pin Receptacle Header (Female) Straight package with 7.62 mm (0.30 in) row pitch, 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 2.54 mm insulator length with overall size 25.40 X 10.16 X 2.54 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+&lt;p&gt;Double-row (2X10), 20-pin Receptacle Header (Female) Straight package with 7.62 mm (0.30 in) row pitch, 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 2.54 mm insulator length with overall size 25.40 X 10.16 X 2.54 mm, pin pattern - counter-clockwise from bottom left&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="HDRVR20W64P762X254_2X10_2540X1016X254B"/>
 </packageinstances>
@@ -170,29 +212,18 @@ Created by Upverter.com</description>
 <wire x1="0" y1="-15.24" x2="0" y2="-15.24" width="0.15" layer="94"/>
 <wire x1="0" y1="-10.16" x2="0" y2="-10.16" width="0.15" layer="94"/>
 <text x="0" y="-2.54" size="2.54" layer="95" align="top-left">&gt;NAME</text>
-<text x="0" y="-45.72" size="2.54" layer="95" align="top-left">ADXRS646BBGZ</text>
-<pin name="1_RATEOUT" x="-5.08" y="-27.94" length="middle" direction="out"/>
-<pin name="1_CP2" x="25.4" y="-12.7" length="middle" direction="pas" rot="R180"/>
-<pin name="1_CP1" x="25.4" y="-7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="1_CP4" x="25.4" y="-22.86" length="middle" direction="pas" rot="R180"/>
-<pin name="2_RATEOUT" x="-5.08" y="-30.48" length="middle" direction="out"/>
-<pin name="2_CP2" x="25.4" y="-15.24" length="middle" direction="pas" rot="R180"/>
-<pin name="2_CP1" x="25.4" y="-10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="2_CP4" x="25.4" y="-25.4" length="middle" direction="pas" rot="R180"/>
-<pin name="1_SUMJ" x="-5.08" y="-20.32" length="middle" direction="in"/>
-<pin name="2_SUMJ" x="-5.08" y="-22.86" length="middle" direction="in"/>
-<pin name="1_CP3" x="25.4" y="-17.78" length="middle" direction="pas" rot="R180"/>
-<pin name="2_CP3" x="25.4" y="-20.32" length="middle" direction="pas" rot="R180"/>
-<pin name="1_DNC" x="-5.08" y="-35.56" length="middle" direction="pas"/>
-<pin name="2_DNC" x="-5.08" y="-38.1" length="middle" direction="pas"/>
-<pin name="1_CP5" x="25.4" y="-27.94" length="middle" direction="pwr" rot="R180"/>
-<pin name="2_CP5" x="25.4" y="-30.48" length="middle" direction="pwr" rot="R180"/>
-<pin name="1_TEMP" x="25.4" y="-35.56" length="middle" direction="out" rot="R180"/>
-<pin name="1_ST2" x="-5.08" y="-12.7" length="middle" direction="in"/>
-<pin name="1_ST1" x="-5.08" y="-7.62" length="middle" direction="in"/>
-<pin name="2_TEMP" x="25.4" y="-38.1" length="middle" direction="out" rot="R180"/>
-<pin name="2_ST2" x="-5.08" y="-15.24" length="middle" direction="in"/>
-<pin name="2_ST1" x="-5.08" y="-10.16" length="middle" direction="in"/>
+<text x="0" y="-45.72" size="2.54" layer="95" align="top-left">ADXRS646BBGZ-EVAL</text>
+<pin name="RATEOUT" x="-5.08" y="-27.94" length="middle" direction="out"/>
+<pin name="CP2" x="25.4" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="CP1" x="25.4" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="CP4" x="25.4" y="-22.86" length="middle" direction="pas" rot="R180"/>
+<pin name="SUMJ" x="-5.08" y="-20.32" length="middle" direction="in"/>
+<pin name="CP3" x="25.4" y="-17.78" length="middle" direction="pas" rot="R180"/>
+<pin name="DNC" x="-5.08" y="-35.56" length="middle" direction="pas"/>
+<pin name="CP5" x="25.4" y="-27.94" length="middle" direction="pwr" rot="R180"/>
+<pin name="TEMP" x="25.4" y="-35.56" length="middle" direction="out" rot="R180"/>
+<pin name="ST2" x="-5.08" y="-12.7" length="middle" direction="in"/>
+<pin name="ST1" x="-5.08" y="-7.62" length="middle" direction="in"/>
 </symbol>
 <symbol name="ANALOG_DEVICES_ADXRS646BBGZ_0_1">
 <description>ADI-ADXRS646-BG-32-3</description>
@@ -211,17 +242,12 @@ Created by Upverter.com</description>
 <wire x1="20.32" y1="-25.4" x2="20.32" y2="-25.4" width="0.15" layer="94"/>
 <wire x1="20.32" y1="-17.78" x2="20.32" y2="-17.78" width="0.15" layer="94"/>
 <text x="0" y="-2.54" size="2.54" layer="95" align="top-left">&gt;NAME</text>
-<text x="0" y="-33.02" size="2.54" layer="95" align="top-left">ADXRS646BBGZ</text>
-<pin name="1_AVCC" x="-5.08" y="-22.86" length="middle" direction="pwr"/>
-<pin name="2_AVCC" x="-5.08" y="-25.4" length="middle" direction="pwr"/>
-<pin name="1_VRATIO" x="-5.08" y="-7.62" length="middle" direction="pwr"/>
-<pin name="2_VRATIO" x="-5.08" y="-10.16" length="middle" direction="pwr"/>
-<pin name="1_VDD" x="-5.08" y="-15.24" length="middle" direction="pwr"/>
-<pin name="2_VDD" x="-5.08" y="-17.78" length="middle" direction="pwr"/>
-<pin name="1_AGND" x="25.4" y="-22.86" length="middle" direction="pwr" rot="R180"/>
-<pin name="1_PGND" x="25.4" y="-15.24" length="middle" direction="pwr" rot="R180"/>
-<pin name="2_AGND" x="25.4" y="-25.4" length="middle" direction="pwr" rot="R180"/>
-<pin name="2_PGND" x="25.4" y="-17.78" length="middle" direction="pwr" rot="R180"/>
+<text x="0" y="-33.02" size="2.54" layer="95" align="top-left">ADXRS646BBGZ-EVAL</text>
+<pin name="AVCC" x="-5.08" y="-22.86" length="middle" direction="pwr"/>
+<pin name="VRATIO" x="-5.08" y="-7.62" length="middle" direction="pwr"/>
+<pin name="VDD" x="-5.08" y="-15.24" length="middle" direction="pwr"/>
+<pin name="AGND" x="25.4" y="-22.86" length="middle" direction="pwr" rot="R180"/>
+<pin name="PGND" x="25.4" y="-15.24" length="middle" direction="pwr" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -232,76 +258,30 @@ Created by Upverter.com</description>
 <gate name="B" symbol="ANALOG_DEVICES_ADXRS646BBGZ_0_1" x="40.32" y="0"/>
 </gates>
 <devices>
-<device name="ANALOG_DEVICES_ADXRS646BBGZ_0_0" package="ANALOG_DEVICES_ADXRS646BBGZ_0">
+<device name="EVAL" package="HDRVR20W64P762X254_2X10_2540X1016X254B">
 <connects>
-<connect gate="A" pin="1_CP1" pad="A5"/>
-<connect gate="A" pin="1_CP2" pad="A4"/>
-<connect gate="A" pin="1_CP3" pad="C6"/>
-<connect gate="A" pin="1_CP4" pad="A6"/>
-<connect gate="A" pin="1_CP5" pad="D6"/>
-<connect gate="A" pin="1_DNC" pad="D1"/>
-<connect gate="A" pin="1_RATEOUT" pad="A2"/>
-<connect gate="A" pin="1_ST1" pad="F5"/>
-<connect gate="A" pin="1_ST2" pad="F4"/>
-<connect gate="A" pin="1_SUMJ" pad="C1"/>
-<connect gate="A" pin="1_TEMP" pad="F3"/>
-<connect gate="A" pin="2_CP1" pad="B5"/>
-<connect gate="A" pin="2_CP2" pad="B4"/>
-<connect gate="A" pin="2_CP3" pad="C7"/>
-<connect gate="A" pin="2_CP4" pad="B7"/>
-<connect gate="A" pin="2_CP5" pad="D7"/>
-<connect gate="A" pin="2_DNC" pad="D2"/>
-<connect gate="A" pin="2_RATEOUT" pad="B1"/>
-<connect gate="A" pin="2_ST1" pad="G5"/>
-<connect gate="A" pin="2_ST2" pad="G4"/>
-<connect gate="A" pin="2_SUMJ" pad="C2"/>
-<connect gate="A" pin="2_TEMP" pad="G3"/>
-<connect gate="B" pin="1_AGND" pad="F1"/>
-<connect gate="B" pin="1_AVCC" pad="A3"/>
-<connect gate="B" pin="1_PGND" pad="F7"/>
-<connect gate="B" pin="1_VDD" pad="E6"/>
-<connect gate="B" pin="1_VRATIO" pad="E1"/>
-<connect gate="B" pin="2_AGND" pad="G2"/>
-<connect gate="B" pin="2_AVCC" pad="B3"/>
-<connect gate="B" pin="2_PGND" pad="G6"/>
-<connect gate="B" pin="2_VDD" pad="E7"/>
-<connect gate="B" pin="2_VRATIO" pad="E2"/>
+<connect gate="A" pin="CP1" pad="19"/>
+<connect gate="A" pin="CP2" pad="20"/>
+<connect gate="A" pin="CP3" pad="17"/>
+<connect gate="A" pin="CP4" pad="18"/>
+<connect gate="A" pin="CP5" pad="14"/>
+<connect gate="A" pin="DNC" pad="4"/>
+<connect gate="A" pin="RATEOUT" pad="2"/>
+<connect gate="A" pin="ST1" pad="11"/>
+<connect gate="A" pin="ST2" pad="10"/>
+<connect gate="A" pin="SUMJ" pad="3"/>
+<connect gate="A" pin="TEMP" pad="9"/>
+<connect gate="B" pin="AGND" pad="8"/>
+<connect gate="B" pin="AVCC" pad="1"/>
+<connect gate="B" pin="PGND" pad="12"/>
+<connect gate="B" pin="VDD" pad="13"/>
+<connect gate="B" pin="VRATIO" pad="7"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10198920/1"/>
+</package3dinstances>
 <technologies>
-<technology name="">
-<attribute name="3DB_BANDWIDTH" value="1 KHz"/>
-<attribute name="CIIVA_IDS" value="978111"/>
-<attribute name="COMPONENT_LINK_1_DESCRIPTION" value="Manufacturer URL"/>
-<attribute name="COMPONENT_LINK_1_URL" value="http://www.analog.com/en/index.html"/>
-<attribute name="COMPONENT_LINK_3_DESCRIPTION" value="Package Specification"/>
-<attribute name="COMPONENT_LINK_3_URL" value="http:/www.analog.com/static/imported-files/packages/6438543BG_32_3.pdf"/>
-<attribute name="COMPONENT_LINK_4_DESCRIPTION" value="Product URL"/>
-<attribute name="COMPONENT_LINK_4_URL" value="http://www.analog.com/en/mems-sensors/mems-gyroscopes/adxrs646/products/product.html"/>
-<attribute name="DATASHEET" value="http://www.analog.com/static/imported-files/data_sheets/ADXRS646.pdf"/>
-<attribute name="DATASHEET_VERSION" value="Rev. A"/>
-<attribute name="FOOTPRINT_VARIANT_NAME_0" value="Manufacturer Recommended"/>
-<attribute name="IMPORTED" value="yes"/>
-<attribute name="IMPORTED_FROM" value="vault"/>
-<attribute name="IMPORT_TS" value="1521855654"/>
-<attribute name="MF" value="Analog Devices"/>
-<attribute name="MOUNTING_TECHNOLOGY" value="Surface Mount"/>
-<attribute name="MPN" value="ADXRS646BBGZ"/>
-<attribute name="NONLINIARITY" value="0.01% of FS"/>
-<attribute name="OUTPUT_TYPE" value="Analog"/>
-<attribute name="PACKAGE" value="BG-32-3"/>
-<attribute name="PACKAGE_DESCRIPTION" value="32-Ball Ceramic Ball Grid Array, 6.85 x 6.85 mm Body, 0.8 mm Pitch"/>
-<attribute name="PACKAGE_VERSION" value="042307-A, 04/2007"/>
-<attribute name="PACKING" value="Tray"/>
-<attribute name="PREFIX" value="U"/>
-<attribute name="RELEASE_DATE" value="1396258507"/>
-<attribute name="SENSITIVITY" value="9 mV/degrees/s"/>
-<attribute name="SUPPLY_CURRENT" value="4 mA"/>
-<attribute name="TEMP_SENSOR" value="Yes"/>
-<attribute name="VAULT_GUID" value="39260BA0-1B05-41FE-9F0C-E391FDD8AF37"/>
-<attribute name="VAULT_REVISION" value="44A55B5B-B9A1-45C2-8DBB-A65CD5D96A36"/>
-<attribute name="VOLTAGE_REFERENCE" value="No"/>
-<attribute name="VOLTAGE_SUPPLY_V" value="5.75 to 6.25"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
