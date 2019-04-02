@@ -375,12 +375,65 @@ include  Type MT6; con-amp-mt6.lbr&lt;p&gt;
 <rectangle x1="-1.544" y1="-3.456" x2="-0.9344" y2="3.148" layer="21"/>
 <rectangle x1="-1.544" y1="-6.504" x2="-0.9344" y2="-5.869" layer="51"/>
 </package>
+<package name="L04P" urn="urn:adsk.eagle:footprint:5719/1" library_version="1">
+<description>&lt;b&gt;AMP MT CONNECTOR&lt;/b&gt;</description>
+<wire x1="4.918" y1="-4.345" x2="-4.861" y2="-4.345" width="0.1524" layer="21"/>
+<wire x1="4.918" y1="6.45" x2="5.426" y2="7.339" width="0.1524" layer="21"/>
+<wire x1="4.918" y1="-3.456" x2="-4.861" y2="-3.456" width="0.1524" layer="21"/>
+<wire x1="4.918" y1="-3.456" x2="4.918" y2="-4.345" width="0.1524" layer="21"/>
+<wire x1="4.918" y1="6.45" x2="4.918" y2="5.815" width="0.1524" layer="21"/>
+<wire x1="4.918" y1="5.815" x2="4.918" y2="-3.456" width="0.1524" layer="21"/>
+<wire x1="4.918" y1="5.815" x2="-4.861" y2="5.815" width="0.1524" layer="21"/>
+<wire x1="-4.861" y1="-3.456" x2="-4.861" y2="-4.345" width="0.1524" layer="21"/>
+<wire x1="-4.861" y1="5.815" x2="-4.861" y2="-3.456" width="0.1524" layer="21"/>
+<wire x1="-7.401" y1="-5.869" x2="-7.401" y2="7.339" width="0.1524" layer="21"/>
+<wire x1="-7.401" y1="7.339" x2="-5.369" y2="7.339" width="0.1524" layer="21"/>
+<wire x1="-5.369" y1="7.339" x2="-4.861" y2="6.45" width="0.1524" layer="21"/>
+<wire x1="-4.861" y1="6.45" x2="-4.861" y2="5.815" width="0.1524" layer="21"/>
+<wire x1="7.433" y1="-5.869" x2="7.433" y2="7.339" width="0.1524" layer="21"/>
+<wire x1="7.433" y1="7.339" x2="5.426" y2="7.339" width="0.1524" layer="21"/>
+<wire x1="3.75" y1="3.529" x2="3.75" y2="3.021" width="0.6604" layer="21"/>
+<wire x1="7.433" y1="-5.869" x2="4.741" y2="-5.869" width="0.1524" layer="21"/>
+<wire x1="2.759" y1="-5.869" x2="4.741" y2="-5.869" width="0.1524" layer="51"/>
+<wire x1="2.759" y1="-5.869" x2="2.251" y2="-5.869" width="0.1524" layer="21"/>
+<wire x1="0.27" y1="-5.869" x2="2.251" y2="-5.869" width="0.1524" layer="51"/>
+<wire x1="0.27" y1="-5.869" x2="-0.238" y2="-5.869" width="0.1524" layer="21"/>
+<wire x1="-2.219" y1="-5.869" x2="-0.238" y2="-5.869" width="0.1524" layer="51"/>
+<wire x1="-2.219" y1="-5.869" x2="-2.752" y2="-5.869" width="0.1524" layer="21"/>
+<wire x1="-4.734" y1="-5.869" x2="-2.752" y2="-5.869" width="0.1524" layer="51"/>
+<wire x1="-4.759" y1="-5.869" x2="-7.401" y2="-5.869" width="0.1524" layer="21"/>
+<wire x1="1.25" y1="3.529" x2="1.25" y2="3.021" width="0.6604" layer="21"/>
+<wire x1="-1.254" y1="3.529" x2="-1.254" y2="3.021" width="0.6604" layer="21"/>
+<wire x1="-3.75" y1="3.529" x2="-3.75" y2="3.021" width="0.6604" layer="21"/>
+<pad name="3" x="-1.25" y="-6.25" drill="1.016" shape="long" rot="R90"/>
+<pad name="4" x="-3.75" y="-6.25" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.25" y="-6.25" drill="1.016" shape="long" rot="R90"/>
+<pad name="1" x="3.75" y="-6.25" drill="1.016" shape="long" rot="R90"/>
+<text x="-7.299" y="-8.79" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.87" y="6.45" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="6.8742" y="-4.345" size="1.27" layer="21" ratio="10" rot="R90">1</text>
+<text x="-5.3178" y="-4.472" size="1.27" layer="21" ratio="10" rot="R90">4</text>
+<rectangle x1="3.4452" y1="-3.456" x2="4.0548" y2="3.148" layer="21"/>
+<rectangle x1="3.4452" y1="-6.504" x2="4.0548" y2="-5.869" layer="51"/>
+<rectangle x1="0.956" y1="-3.456" x2="1.5656" y2="3.148" layer="21"/>
+<rectangle x1="0.956" y1="-6.504" x2="1.5656" y2="-5.869" layer="51"/>
+<rectangle x1="-1.5586" y1="-6.504" x2="-0.949" y2="-5.869" layer="51"/>
+<rectangle x1="-1.5586" y1="-3.456" x2="-0.949" y2="3.148" layer="21"/>
+<rectangle x1="-4.0478" y1="-6.504" x2="-3.4382" y2="-5.869" layer="51"/>
+<rectangle x1="-4.0478" y1="-3.456" x2="-3.4382" y2="3.148" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="L02P" urn="urn:adsk.eagle:package:5777/1" type="box" library_version="1">
 <description>AMP MT CONNECTOR</description>
 <packageinstances>
 <packageinstance name="L02P"/>
+</packageinstances>
+</package3d>
+<package3d name="L04P" urn="urn:adsk.eagle:package:5780/1" type="box" library_version="1">
+<description>AMP MT CONNECTOR</description>
+<packageinstances>
+<packageinstance name="L04P"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -408,6 +461,36 @@ include  Type MT6; con-amp-mt6.lbr&lt;p&gt;
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:5777/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L04P" urn="urn:adsk.eagle:component:5839/1" prefix="SV" uservalue="yes" library_version="1">
+<description>&lt;b&gt;AMP MT CONNECTOR&lt;/b&gt;</description>
+<gates>
+<gate name="-1" symbol="M" x="0" y="7.62" addlevel="always"/>
+<gate name="-2" symbol="M" x="0" y="2.54" addlevel="always"/>
+<gate name="-3" symbol="M" x="0" y="-2.54" addlevel="always"/>
+<gate name="-4" symbol="M" x="0" y="-7.62" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="L04P">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5780/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -3936,6 +4019,10 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="U$69" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCCA" device=""/>
 <part name="R37" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="100KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
 <part name="R38" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="100KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100k"/>
+<part name="SV1" library="con-amp-mt" library_urn="urn:adsk.eagle:library:123" deviceset="L02P" device="" package3d_urn="urn:adsk.eagle:package:5777/1"/>
+<part name="SUPPLY1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="SV2" library="con-amp-mt" library_urn="urn:adsk.eagle:library:123" deviceset="L04P" device="" package3d_urn="urn:adsk.eagle:package:5780/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -4158,6 +4245,34 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <attribute name="NAME" x="157.48" y="105.664" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="157.48" y="102.616" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
+<instance part="SV1" gate="-1" x="213.36" y="170.18" smashed="yes">
+<attribute name="NAME" x="212.852" y="171.196" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="213.614" y="167.767" size="1.778" layer="96"/>
+</instance>
+<instance part="SV1" gate="-2" x="213.36" y="165.1" smashed="yes">
+<attribute name="NAME" x="212.852" y="166.116" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="213.614" y="162.687" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY1" gate="G$1" x="233.68" y="170.18" smashed="yes" rot="R270">
+<attribute name="VALUE" x="236.474" y="170.18" size="1.778" layer="96" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="X_1" gate="G$1" x="236.22" y="162.56" smashed="yes"/>
+<instance part="SV2" gate="-1" x="213.36" y="157.48" smashed="yes">
+<attribute name="NAME" x="212.852" y="158.496" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="213.614" y="155.067" size="1.778" layer="96"/>
+</instance>
+<instance part="SV2" gate="-2" x="213.36" y="152.4" smashed="yes">
+<attribute name="NAME" x="212.852" y="153.416" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="213.614" y="149.987" size="1.778" layer="96"/>
+</instance>
+<instance part="SV2" gate="-3" x="213.36" y="147.32" smashed="yes">
+<attribute name="NAME" x="212.852" y="148.336" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="213.614" y="144.907" size="1.778" layer="96"/>
+</instance>
+<instance part="SV2" gate="-4" x="213.36" y="142.24" smashed="yes">
+<attribute name="NAME" x="212.852" y="143.256" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="213.614" y="139.827" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4223,6 +4338,12 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="162.56" y1="152.4" x2="167.64" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="152.4" x2="167.64" y2="152.4" width="0.1524" layer="91"/>
 <junction x="167.64" y="152.4"/>
+</segment>
+<segment>
+<pinref part="X_1" gate="G$1" pin="0"/>
+<wire x1="236.22" y1="162.56" x2="236.22" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="-2" pin="S"/>
+<wire x1="218.44" y1="165.1" x2="236.22" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$48" class="0">
@@ -4328,6 +4449,11 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="109.22" y1="144.78" x2="109.22" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="144.78" x2="109.22" y2="144.78" width="0.1524" layer="91"/>
 <junction x="109.22" y="144.78"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="-1" pin="S"/>
+<wire x1="218.44" y1="170.18" x2="233.68" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="G$1" pin="5V"/>
 </segment>
 </net>
 <net name="VCCA" class="0">
@@ -4649,11 +4775,16 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <junction x="231.14" y="86.36"/>
 </segment>
 </net>
-<net name="N$61" class="0">
+<net name="CS" class="0">
 <segment>
 <pinref part="U$10" gate="G$1" pin="CS"/>
 <wire x1="144.78" y1="40.64" x2="154.94" y2="40.64" width="0.1524" layer="91"/>
 <label x="152.4" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="218.44" y1="157.48" x2="233.68" y2="157.48" width="0.1524" layer="91"/>
+<label x="228.6" y="157.48" size="1.778" layer="95"/>
+<pinref part="SV2" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="CLK" class="0">
@@ -4662,6 +4793,11 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="144.78" y1="35.56" x2="154.94" y2="35.56" width="0.1524" layer="91"/>
 <label x="152.4" y="35.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="218.44" y1="142.24" x2="233.68" y2="142.24" width="0.1524" layer="91"/>
+<label x="228.6" y="142.24" size="1.778" layer="95"/>
+<pinref part="SV2" gate="-4" pin="S"/>
+</segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
@@ -4669,12 +4805,22 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="109.22" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
 <label x="96.52" y="35.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="218.44" y1="147.32" x2="233.68" y2="147.32" width="0.1524" layer="91"/>
+<label x="228.6" y="147.32" size="1.778" layer="95"/>
+<pinref part="SV2" gate="-3" pin="S"/>
+</segment>
 </net>
 <net name="MISO" class="0">
 <segment>
 <pinref part="R36" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="40.64" x2="78.74" y2="40.64" width="0.1524" layer="91"/>
 <label x="76.2" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="218.44" y1="152.4" x2="233.68" y2="152.4" width="0.1524" layer="91"/>
+<label x="228.6" y="152.4" size="1.778" layer="95"/>
+<pinref part="SV2" gate="-2" pin="S"/>
 </segment>
 </net>
 <net name="SDF" class="0">
