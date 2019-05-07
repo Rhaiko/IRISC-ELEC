@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-04-09T09:00:38Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.2.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "irisc"
+        },
+        "Owner": "Elrick Weterings <elrickweterings@gmail.com>",
+        "Size": {
+            "X": 40.5,
+            "Y": 34.5
+        }
+    }
+}
