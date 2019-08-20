@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-06-30T14:39:39Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.2.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "irisc"
+        },
+        "Owner": "Sabina Bjoerk <sabbjr-4@student.ltu.se>",
+        "Size": {
+            "X": 41.072,
+            "Y": 31.359
+        }
+    }
+}
